@@ -100,11 +100,35 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="images\lanceroSeñorio.PNG" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="images\cueroCurtado.PNG" />
     <Resource Include="images\hierroBruto.PNG" />
     <Resource Include="images\telaAspera.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\jabalineroSeñorio.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\maderaSeca.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arqueroSeñorio.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cobreBruto.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\ballesteroSeñorio.PNG" />
+    <Resource Include="images\Coustilleux.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\plata.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,6 +10,7 @@ namespace Conqueros_Calculator
     {
         public string nombre;
         public List<Recurso> recursos;
+      
 
     }
 

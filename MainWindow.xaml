@@ -4,9 +4,82 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Conqueros_Calculator"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        mc:Ignorable="d" 
+        Title="Calculator" Height="637.602" Width="963.079">
+
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="images/wallpaper.jpg" Opacity="0.4"/>
+        </Grid.Background>
+        <StackPanel Background="White" Opacity="0.8" HorizontalAlignment="Left" Height="521" Margin="10,10,0,0" VerticalAlignment="Top" Width="312">
+            <Grid>
+                <Image x:Name="imgLanceroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroSeñorio.PNG" Cursor="Help" />
+                <Label  Foreground="DarkGreen"  Content="Lancero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                <TextBox x:Name="txtLanceroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"  TextChanged="TxtLanceroSeñorio_TextChanged" GotKeyboardFocus="TxtLanceroSeñorio_GotKeyboardFocus" GotMouseCapture="TxtLanceroSeñorio_GotMouseCapture" />
+            </Grid>
+            <Grid>
+                <Image x:Name="imgJabalineroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/jabalineroSeñorio.PNG" Cursor="Help" />
+                <Label  Foreground="DarkGreen"  Content="Jabalinero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                <TextBox x:Name="txtJabalineroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtJabalineroSeñorio_TextChanged"  />
+            </Grid>
+            <Grid>
+                <Image x:Name="imgArqueroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroSeñorio.PNG" Cursor="Help" />
+                <Label  Foreground="DarkGreen"  Content="Arqueros de señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                <TextBox x:Name="txtArqueroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtArqueroSeñorio_TextChanged"   />
+            </Grid>
+            <Grid>
+                <Image x:Name="imgBallesteroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/ballesteroSeñorio.PNG" Cursor="Help" />
+                <Label  Foreground="DarkGreen"  Content="Ballesteros de señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                <TextBox x:Name="txtBallesteroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtBallesteroSeñorio_TextChanged"    />
+            </Grid>
+            <Grid>
+                <Image x:Name="imgCoustilleux" HorizontalAlignment="Left" Width="50" Height="50" Source="images/Coustilleux.PNG" Cursor="Help" />
+                <Label  Foreground="DarkGreen"  Content="Coustilleux" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                <TextBox x:Name="txtCoustilleux"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtCoustilleux_TextChanged"    />
+            </Grid>
+        </StackPanel>
+        <StackPanel  Background="White" Opacity="0.7" HorizontalAlignment="Left" Height="587" Margin="327,10,0,0" VerticalAlignment="Top" Width="276">
+            <Grid>
+                <Image HorizontalAlignment="Left" Width="50" Height="50" Source="images/cueroCurtado.PNG" >
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="images/cueroCurtado.PNG"/>
+                    </Image.OpacityMask>
+                </Image>
+                <Label Content="Cuero curtado" FontWeight="Bold" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" Foreground="DarkGreen"  />
+                <TextBox x:Name="txtCueroCurtado" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+
+            </Grid>
+            <Grid>
+                <Image HorizontalAlignment="Left" Width="50" Height="50" Source="images/hierroBruto.PNG"  >
+                    <Image.OpacityMask>
+                        <ImageBrush ImageSource="images/hierroBruto.PNG"/>
+                    </Image.OpacityMask>
+
+                </Image>
+                <Label  FontWeight="Bold" Content="Hierro bruto" HorizontalAlignment="Left"  Foreground="DarkGreen"   Margin="55,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtHierroBruto" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+
+            </Grid>
+            <Grid>
+                <Image   HorizontalAlignment="Left" Width="50" Height="50" Source="images/telaAspera.PNG" />
+                <Label FontWeight="Bold" Content="Tela aspera" HorizontalAlignment="Left" Margin="55,10,0,0" Foreground="DarkGreen"   VerticalAlignment="Top"/>
+                <TextBox x:Name="txtTelaAspera" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+
+            </Grid>
+            <Grid>
+                <Image   HorizontalAlignment="Left" Width="50" Height="50" Source="images/maderaSeca.PNG" />
+                <Label FontWeight="Bold" Content="Madera seca" HorizontalAlignment="Left" Margin="55,10,0,0" Foreground="DarkGreen"   VerticalAlignment="Top"/>
+                <TextBox x:Name="txtMaderaSeca" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+
+            </Grid>
+            <Grid>
+                <Image   HorizontalAlignment="Left" Width="50" Height="50" Source="images/cobreBruto.PNG" />
+                <Label FontWeight="Bold" Content="Cobre en bruto" HorizontalAlignment="Left" Margin="55,10,0,0" Foreground="DarkGreen"   VerticalAlignment="Top"/>
+                <TextBox x:Name="txtCobreBruto" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+
+            </Grid>
+        </StackPanel>
+        <TextBox x:Name="txtPlata" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="10,553,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="113"/>
+        <Image   HorizontalAlignment="Left" Width="29" Source="images/plata.PNG" Margin="128,553,0,25" />
     </Grid>
 </Window>

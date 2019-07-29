@@ -10,6 +10,7 @@ namespace Conqueros_Calculator
     {
         public string nombre;
         public List<MaterialGasto> materiales;
+        public int costePlata;
     }
 
     public class MaterialGasto {
