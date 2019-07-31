@@ -56,10 +56,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="modelos\Equipamiento.cs" />
-    <Compile Include="modelos\Material.cs" />
-    <Compile Include="modelos\Nombre.cs" />
-    <Compile Include="modelos\Rareza.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,7 +70,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="modelos\Recusos.cs" />
+    <Compile Include="modelos\Equipamiento.cs" />
+    <Compile Include="modelos\Material.cs" />
+    <Compile Include="modelos\Recurso.cs" />
+    <Compile Include="modelos\Tipos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -11,7 +11,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="images/wallpaper.jpg" Opacity="0.4"/>
         </Grid.Background>
-        <StackPanel Background="White" Opacity="0.8" HorizontalAlignment="Left" Height="521" Margin="10,10,0,0" VerticalAlignment="Top" Width="312">
+        <StackPanel Background="White" Opacity="0.8" HorizontalAlignment="Left" Height="542" Margin="10,55,0,0" VerticalAlignment="Top" Width="312">
             <Grid>
                 <Image x:Name="imgLanceroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroSeñorio.PNG" Cursor="Help" />
                 <Label  Foreground="DarkGreen"  Content="Lancero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
@@ -38,7 +38,7 @@
                 <TextBox x:Name="txtCoustilleux"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtCoustilleux_TextChanged"    />
             </Grid>
         </StackPanel>
-        <StackPanel  Background="White" Opacity="0.7" HorizontalAlignment="Left" Height="587" Margin="327,10,0,0" VerticalAlignment="Top" Width="276">
+        <StackPanel  Background="White" Opacity="0.7" HorizontalAlignment="Left" Height="542" Margin="327,55,0,0" VerticalAlignment="Top" Width="276">
             <Grid>
                 <Image HorizontalAlignment="Left" Width="50" Height="50" Source="images/cueroCurtado.PNG" >
                     <Image.OpacityMask>
@@ -79,7 +79,8 @@
 
             </Grid>
         </StackPanel>
-        <TextBox x:Name="txtPlata" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="10,553,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="113"/>
-        <Image   HorizontalAlignment="Left" Width="29" Source="images/plata.PNG" Margin="128,553,0,25" />
+        <TextBox x:Name="txtPlata" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="113"/>
+        <Image   HorizontalAlignment="Left" Width="29" Source="images/plata.PNG" Margin="128,10,0,568" />
+        <CheckBox x:Name="chkOcultarNoUsados" Content="Ocultar no usados" HorizontalAlignment="Left" Margin="327,35,0,0" VerticalAlignment="Top" Click="ChkOcultarNoUsados_Click"/>
     </Grid>
 </Window>

@@ -159,15 +159,15 @@ namespace Conqueros_Calculator
         private void muestraRecursos()
         {
             txtCueroCurtado.Text = myEquipamientos.Sum(x => x.cantidad * x.equipamiento.materiales.Where(z => z.material == CueroCurtado).Sum(y => y.cantidad)).ToString("N0");
-            ((Grid)txtCueroCurtado.Parent).Visibility = txtCueroCurtado.Text != "0" ? Visibility.Visible : Visibility.Collapsed; 
+            ((Grid)txtCueroCurtado.Parent).Visibility = txtCueroCurtado.Text == "0" && chkOcultarNoUsados.IsChecked.Value? Visibility.Collapsed : Visibility.Visible; 
             txtHierroBruto.Text = myEquipamientos.Sum(x => x.cantidad * x.equipamiento.materiales.Where(z => z.material == HierroBruto).Sum(y => y.cantidad)).ToString("N0");
-            ((Grid)txtHierroBruto.Parent).Visibility = txtHierroBruto.Text != "0" ? Visibility.Visible : Visibility.Collapsed;
+            ((Grid)txtHierroBruto.Parent).Visibility = txtHierroBruto.Text == "0" && chkOcultarNoUsados.IsChecked.Value ? Visibility.Collapsed : Visibility.Visible;
             txtTelaAspera.Text = myEquipamientos.Sum(x => x.cantidad * x.equipamiento.materiales.Where(z => z.material == TelaAspera).Sum(y => y.cantidad)).ToString("N0");
-            ((Grid)txtTelaAspera.Parent).Visibility = txtTelaAspera.Text != "0" ? Visibility.Visible : Visibility.Collapsed;
+            ((Grid)txtTelaAspera.Parent).Visibility = txtTelaAspera.Text == "0" && chkOcultarNoUsados.IsChecked.Value ? Visibility.Collapsed : Visibility.Visible;
             txtMaderaSeca.Text = myEquipamientos.Sum(x => x.cantidad * x.equipamiento.materiales.Where(z => z.material == MaderaSeca).Sum(y => y.cantidad)).ToString("N0");
-            ((Grid)txtMaderaSeca.Parent).Visibility = txtMaderaSeca.Text != "0" ? Visibility.Visible : Visibility.Collapsed;
+            ((Grid)txtMaderaSeca.Parent).Visibility = txtMaderaSeca.Text == "0" && chkOcultarNoUsados.IsChecked.Value ? Visibility.Collapsed : Visibility.Visible;
             txtCobreBruto.Text = myEquipamientos.Sum(x => x.cantidad * x.equipamiento.materiales.Where(z => z.material == CobreBruto).Sum(y => y.cantidad)).ToString("N0");
-            ((Grid)txtCobreBruto.Parent).Visibility = txtCobreBruto.Text != "0" ? Visibility.Visible : Visibility.Collapsed;
+            ((Grid)txtCobreBruto.Parent).Visibility = txtCobreBruto.Text == "0" && chkOcultarNoUsados.IsChecked.Value ? Visibility.Collapsed : Visibility.Visible;
             txtPlata.Text = myEquipamientos.Sum(x => x.cantidad * x.equipamiento.costePlata).ToString("N0");
         }
 
@@ -233,6 +233,11 @@ namespace Conqueros_Calculator
         private void TxtLanceroSeñorio_GotMouseCapture(object sender, MouseEventArgs e)
         {
             txtLanceroSeñorio.SelectAll();
+        }
+
+        private void ChkOcultarNoUsados_Click(object sender, RoutedEventArgs e)
+        {
+            muestraRecursos();
         }
     }
 }
