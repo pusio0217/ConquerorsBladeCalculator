@@ -10,7 +10,7 @@ namespace Conqueros_Calculator.modelos
     {
         Comun, PocoComun, Raro, Epico
     }
-    public enum Zonas
+    public  enum Zonas
     {
         Ostaria,Urvenija,Maoyang,Lianjun,TierraDeNadie
     }

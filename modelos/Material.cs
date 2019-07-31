@@ -8,6 +8,19 @@ namespace Conqueros_Calculator.modelos
 {
     public class Material
     {
+
+
+        public static bool operator ==(Material e1, Material e2)
+        {
+            return e1.nombre == e2.nombre;
+        }
+        public static bool operator !=(Material e1, Material e2)
+        {
+            return e1.nombre != e2.nombre;
+        }
+
+
+
         public string nombre;
         public int costePlata;
         public List<Recurso> recursos;
@@ -40,7 +53,7 @@ namespace Conqueros_Calculator.modelos
         public static readonly string THierroBruto = "Hierro en bruto";
         public static Material HierroBruto(int cantidad)
         {
-            return new Material(TTelaAspera, 2, new List<Recurso> {
+            return new Material(THierroBruto, 2, new List<Recurso> {
                 Recurso.Siderita(10),
                 Recurso.Magnetita(8),
                 Recurso.Limonita(7),

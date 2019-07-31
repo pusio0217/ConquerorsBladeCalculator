@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace Conqueros_Calculator.modelos
 {
@@ -94,9 +95,13 @@ namespace Conqueros_Calculator.modelos
 
 
         #endregion
-        public string nombre;
-        public int cantidad;
-        public Rareza rareza;
+
+  
+
+
+        public string nombre { get; set; }
+        public int cantidad { get; set; }
+        public Rareza rareza { get; set; }
         public List<Zonas> zonas;
         public Origen origen;
 

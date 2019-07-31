@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Conqueros_Calculator"
+           xmlns:my="clr-namespace:Conqueros_Calculator.modelos"
         mc:Ignorable="d" 
         Title="Calculator" Height="637.602" Width="963.079">
 
@@ -15,7 +16,7 @@
             <Grid>
                 <Image x:Name="imgLanceroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroSeñorio.PNG" Cursor="Help" />
                 <Label  Foreground="DarkGreen"  Content="Lancero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
-                <TextBox x:Name="txtLanceroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"  TextChanged="TxtLanceroSeñorio_TextChanged" GotKeyboardFocus="TxtLanceroSeñorio_GotKeyboardFocus" GotMouseCapture="TxtLanceroSeñorio_GotMouseCapture" />
+                <TextBox x:Name="txtLanceroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"  TextChanged="TxtLanceroSeñorio_TextChanged"/>
             </Grid>
             <Grid>
                 <Image x:Name="imgJabalineroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/jabalineroSeñorio.PNG" Cursor="Help" />
@@ -46,7 +47,7 @@
                     </Image.OpacityMask>
                 </Image>
                 <Label Content="Cuero curtado" FontWeight="Bold" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" Foreground="DarkGreen"  />
-                <TextBox x:Name="txtCueroCurtado" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+                <TextBox x:Name="txtCueroCurtido" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
 
             </Grid>
             <Grid>
@@ -79,6 +80,46 @@
 
             </Grid>
         </StackPanel>
+        <DataGrid x:Name="DGmateriales" AutoGenerateColumns="False" Height="Auto" HeadersVisibility="None" Margin="621,55,10,10">
+
+
+
+
+            <DataGrid.Columns>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding nombre}" >
+                    <DataGridTextColumn.CellStyle>
+                        <Style TargetType="DataGridCell">
+                            <Setter Property="Foreground" Value="Black" />
+                            <!-- default value -->
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding rareza}" Value="Comun">
+                                    <Setter Property="Foreground" Value="Black" />
+                                    <!-- special behavior -->
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding rareza}" Value="PocoComun">
+                                    <Setter Property="Foreground" Value="DarkGreen" />
+                                    <!-- special behavior -->
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding rareza}" Value="Raro">
+                                    <Setter Property="Foreground" Value="Blue" />
+                                    <!-- special behavior -->
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding rareza}" Value="Epico">
+                                    <Setter Property="Foreground" Value="Purple" />
+                                    <!-- special behavior -->
+                                </DataTrigger>
+
+
+                            </Style.Triggers>
+                        </Style>
+                    </DataGridTextColumn.CellStyle>
+
+                </DataGridTextColumn>
+
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding cantidad}"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
         <TextBox x:Name="txtPlata" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="113"/>
         <Image   HorizontalAlignment="Left" Width="29" Source="images/plata.PNG" Margin="128,10,0,568" />
         <CheckBox x:Name="chkOcultarNoUsados" Content="Ocultar no usados" HorizontalAlignment="Left" Margin="327,35,0,0" VerticalAlignment="Top" Click="ChkOcultarNoUsados_Click"/>
