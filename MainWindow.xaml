@@ -6,122 +6,155 @@
         xmlns:local="clr-namespace:Conqueros_Calculator"
            xmlns:my="clr-namespace:Conqueros_Calculator.modelos"
         mc:Ignorable="d" 
-        Title="Calculator" Height="637.602" Width="963.079">
-
+        Title="Calculator" Height="700" Width="1000" ResizeMode="NoResize">
+    <Window.Resources>
+        <Style x:Key="DataGridContentCellCentering" TargetType="{x:Type DataGridCell}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DataGridCell}">
+                        <Grid Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="images/wallpaper.jpg" Opacity="0.4"/>
-        </Grid.Background>
-        <StackPanel Background="White" Opacity="0.8" HorizontalAlignment="Left" Height="542" Margin="10,55,0,0" VerticalAlignment="Top" Width="312">
-            <Grid>
-                <Image x:Name="imgLanceroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroSeñorio.PNG" Cursor="Help" />
-                <Label  Foreground="DarkGreen"  Content="Lancero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
-                <TextBox x:Name="txtLanceroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"  TextChanged="TxtLanceroSeñorio_TextChanged"/>
-            </Grid>
-            <Grid>
-                <Image x:Name="imgJabalineroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/jabalineroSeñorio.PNG" Cursor="Help" />
-                <Label  Foreground="DarkGreen"  Content="Jabalinero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
-                <TextBox x:Name="txtJabalineroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtJabalineroSeñorio_TextChanged"  />
-            </Grid>
-            <Grid>
-                <Image x:Name="imgArqueroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroSeñorio.PNG" Cursor="Help" />
-                <Label  Foreground="DarkGreen"  Content="Arqueros de señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
-                <TextBox x:Name="txtArqueroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtArqueroSeñorio_TextChanged"   />
-            </Grid>
-            <Grid>
-                <Image x:Name="imgBallesteroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/ballesteroSeñorio.PNG" Cursor="Help" />
-                <Label  Foreground="DarkGreen"  Content="Ballesteros de señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
-                <TextBox x:Name="txtBallesteroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtBallesteroSeñorio_TextChanged"    />
-            </Grid>
-            <Grid>
-                <Image x:Name="imgCoustilleux" HorizontalAlignment="Left" Width="50" Height="50" Source="images/Coustilleux.PNG" Cursor="Help" />
-                <Label  Foreground="DarkGreen"  Content="Coustilleux" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
-                <TextBox x:Name="txtCoustilleux"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="194,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtCoustilleux_TextChanged"    />
-            </Grid>
-        </StackPanel>
-        <StackPanel  Background="White" Opacity="0.7" HorizontalAlignment="Left" Height="542" Margin="327,55,0,0" VerticalAlignment="Top" Width="276">
-            <Grid>
-                <Image HorizontalAlignment="Left" Width="50" Height="50" Source="images/cueroCurtado.PNG" >
-                    <Image.OpacityMask>
-                        <ImageBrush ImageSource="images/cueroCurtado.PNG"/>
-                    </Image.OpacityMask>
-                </Image>
-                <Label Content="Cuero curtado" FontWeight="Bold" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" Foreground="DarkGreen"  />
-                <TextBox x:Name="txtCueroCurtido" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+        <Grid Opacity="0.9">
+            <Grid.Effect>
+                <BlurEffect Radius="15"></BlurEffect>
+            </Grid.Effect>
 
-            </Grid>
-            <Grid>
-                <Image HorizontalAlignment="Left" Width="50" Height="50" Source="images/hierroBruto.PNG"  >
-                    <Image.OpacityMask>
-                        <ImageBrush ImageSource="images/hierroBruto.PNG"/>
-                    </Image.OpacityMask>
+            <Grid.Background>
+                <ImageBrush ImageSource="images/wallpaper.jpg" />
 
-                </Image>
-                <Label  FontWeight="Bold" Content="Hierro bruto" HorizontalAlignment="Left"  Foreground="DarkGreen"   Margin="55,10,0,0" VerticalAlignment="Top"/>
-                <TextBox x:Name="txtHierroBruto" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+            </Grid.Background>
+        </Grid>
+        <Grid Opacity="0.7" Background="Black">
 
-            </Grid>
-            <Grid>
-                <Image   HorizontalAlignment="Left" Width="50" Height="50" Source="images/telaAspera.PNG" />
-                <Label FontWeight="Bold" Content="Tela aspera" HorizontalAlignment="Left" Margin="55,10,0,0" Foreground="DarkGreen"   VerticalAlignment="Top"/>
-                <TextBox x:Name="txtTelaAspera" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
 
-            </Grid>
-            <Grid>
-                <Image   HorizontalAlignment="Left" Width="50" Height="50" Source="images/maderaSeca.PNG" />
-                <Label FontWeight="Bold" Content="Madera seca" HorizontalAlignment="Left" Margin="55,10,0,0" Foreground="DarkGreen"   VerticalAlignment="Top"/>
-                <TextBox x:Name="txtMaderaSeca" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
 
-            </Grid>
-            <Grid>
-                <Image   HorizontalAlignment="Left" Width="50" Height="50" Source="images/cobreBruto.PNG" />
-                <Label FontWeight="Bold" Content="Cobre en bruto" HorizontalAlignment="Left" Margin="55,10,0,0" Foreground="DarkGreen"   VerticalAlignment="Top"/>
-                <TextBox x:Name="txtCobreBruto" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="154,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="93"/>
+        </Grid>
+        <TabControl Margin="0,23,681,24" Background="Transparent">
+            <TabItem Header="Europa" >
+                <StackPanel Background="Transparent"  HorizontalAlignment="Left" Height="590" Margin="10,0,0,0" VerticalAlignment="Top" Width="289">
 
-            </Grid>
-        </StackPanel>
-        <DataGrid x:Name="DGmateriales" AutoGenerateColumns="False" Height="Auto" HeadersVisibility="None" Margin="621,55,10,10">
+                    <Grid>
+                       
+                        <Image x:Name="imgLanceroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroSeñorio.PNG" Cursor="Help" />
+                        <Label  Foreground="LightGreen"  Content="Lancero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
+                        <TextBox x:Name="txtLanceroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"  TextChanged="TxtLanceroSeñorio_TextChanged" Grid.Column="1"/>
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgJabalineroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/jabalineroSeñorio.PNG" Cursor="Help" />
+                        <Label  Foreground="LightGreen"  Content="Jabalinero señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtJabalineroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtJabalineroSeñorio_TextChanged"  />
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgArqueroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroSeñorio.PNG" Cursor="Help" />
+                        <Label  Foreground="LightGreen"  Content="Arqueros de señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtArqueroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtArqueroSeñorio_TextChanged"   />
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgBallesteroSeñorio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/ballesteroSeñorio.PNG" Cursor="Help" />
+                        <Label  Foreground="LightGreen"  Content="Ballesteros de señorio" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtBallesteroSeñorio"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtBallesteroSeñorio_TextChanged"    />
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgCoustilleux" HorizontalAlignment="Left" Width="50" Height="50" Source="images/Coustilleux.PNG" Cursor="Help" />
+                        <Label  Foreground="LightGreen"  Content="Coustilleux" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtCoustilleux"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtCoustilleux_TextChanged"    />
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgEscudero" HorizontalAlignment="Left" Width="50" Height="50" Source="images/escudero.PNG" Cursor="Help" />
+                        <Label  Foreground="DeepSkyBlue"  Content="Escudero" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtEscudero"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtEscudero_TextChanged"   />
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgAlabardero" HorizontalAlignment="Left" Width="50" Height="50" Source="images/alabardero.PNG" Cursor="Help" />
+                        <Label  Foreground="DeepSkyBlue"  Content="Alabardero" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtAlabardero"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtAlabardero_TextChanged"   />
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgArqueroFuego" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroFuego.PNG" Cursor="Help" />
+                        <Label  Foreground="DeepSkyBlue"  Content="Arquero de fuego" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtArqueroFuego"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtArqueroFuego_TextChanged" />
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgBallesteroMercenario" HorizontalAlignment="Left" Width="50" Height="50" Source="images/ballesteroMercenario.PNG" Cursor="Help" />
+                        <Label  Foreground="DeepSkyBlue"  Content="Ballestero mercenario" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtBallesteroMercenario"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtBallesteroMercenario_TextChanged"/>
+                    </Grid>
+                    <Grid>
+                        <Image x:Name="imgArcabuqueroMercenario" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arcabuqueroMercenario.PNG" Cursor="Help" />
+                        <Label  Foreground="DeepSkyBlue"  Content="Arcabuquero Mercenario" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtArcabuquero"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtArcabuquero_TextChanged"/>
+                    </Grid>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="China" >
+               
+            </TabItem>
+        </TabControl>
+        <DataGrid x:Name="DGmateriales"  RowBackground="Transparent"  Background="Transparent" AutoGenerateColumns="False"  Width="312" HeadersVisibility="None" Margin="327,23,355,24">
 
 
 
 
             <DataGrid.Columns>
-                <DataGridTextColumn IsReadOnly="True" Binding="{Binding nombre}" >
-                    <DataGridTextColumn.CellStyle>
-                        <Style TargetType="DataGridCell">
-                            <Setter Property="Foreground" Value="Black" />
-                            <!-- default value -->
-                            <Style.Triggers>
-                                <DataTrigger Binding="{Binding rareza}" Value="Comun">
-                                    <Setter Property="Foreground" Value="Black" />
-                                    <!-- special behavior -->
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding rareza}" Value="PocoComun">
-                                    <Setter Property="Foreground" Value="DarkGreen" />
-                                    <!-- special behavior -->
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding rareza}" Value="Raro">
-                                    <Setter Property="Foreground" Value="Blue" />
-                                    <!-- special behavior -->
-                                </DataTrigger>
-                                <DataTrigger Binding="{Binding rareza}" Value="Epico">
-                                    <Setter Property="Foreground" Value="Purple" />
-                                    <!-- special behavior -->
-                                </DataTrigger>
+
+                <DataGridTemplateColumn  Width="50" IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding imagen}"  Width="50" Height="50" Stretch="None"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="170"  IsReadOnly="True" CellStyle="{StaticResource DataGridContentCellCentering }">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <Label MaxWidth="200" Content="{Binding nombre}" HorizontalAlignment="Center" Foreground="{Binding color}" FontWeight="Bold" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
 
-                            </Style.Triggers>
-                        </Style>
-                    </DataGridTextColumn.CellStyle>
+
+                <DataGridTextColumn  CellStyle="{StaticResource DataGridContentCellCentering}"  IsReadOnly="True" Binding="{Binding cantidad}" Foreground="White" FontSize="20" >
 
                 </DataGridTextColumn>
 
-                <DataGridTextColumn IsReadOnly="True" Binding="{Binding cantidad}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="DGRecursos" RowBackground="Transparent" Background="Transparent"  GridLinesVisibility="Horizontal" AutoGenerateColumns="False" Height="Auto" HeadersVisibility="None" Margin="644,23,10,24">
+
+            <DataGrid.Columns>
+
+                <DataGridTemplateColumn  Width="50" IsReadOnly="True">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Source="{Binding imagen}"  Width="50" Height="50" Stretch="None"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="170"  IsReadOnly="True" CellStyle="{StaticResource DataGridContentCellCentering }">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate >
+                            <Label MaxWidth="200" Content="{Binding nombre}" HorizontalAlignment="Center" Foreground="{Binding color}" FontWeight="Bold" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+
+                <DataGridTextColumn  CellStyle="{StaticResource DataGridContentCellCentering}"  IsReadOnly="True" Binding="{Binding cantidad}" Foreground="White" FontSize="20" >
+
+                </DataGridTextColumn>
 
             </DataGrid.Columns>
         </DataGrid>
-        <TextBox x:Name="txtPlata" IsReadOnly="True" HorizontalAlignment="Left"  FontSize="20" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="113"/>
-        <Image   HorizontalAlignment="Left" Width="29" Source="images/plata.PNG" Margin="128,10,0,568" />
-        <CheckBox x:Name="chkOcultarNoUsados" Content="Ocultar no usados" HorizontalAlignment="Left" Margin="327,35,0,0" VerticalAlignment="Top" Click="ChkOcultarNoUsados_Click"/>
     </Grid>
 </Window>

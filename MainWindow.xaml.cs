@@ -33,38 +33,60 @@ namespace Conqueros_Calculator
 
             myEquipamientos = new List<Equipamiento>();
 
-
-
-
         }
+
 
         private void MuestraMateriales()
         {
 
-            txtCueroCurtido.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCueroCurtido).Sum(y => y.cantidad))).ToString("N0");
+
+
+
+          /*  txtCueroCurtido.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCueroCurtido).Sum(y => y.cantidad))).ToString("N0");
             txtHierroBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.THierroBruto).Sum(y => y.cantidad))).ToString("N0");
             txtTelaAspera.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TTelaAspera).Sum(y => y.cantidad))).ToString("N0");
             txtMaderaSeca.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TMaderaSeca).Sum(y => y.cantidad))).ToString("N0");
             txtCobreBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCobreBruto).Sum(y => y.cantidad))).ToString("N0");
-
+            */
           
 
             var miRecursos = new List<Recurso>();
-            foreach (var myEquipamiento in myEquipamientos)
-                foreach (var myMaterial in myEquipamiento.materiales)
-                    foreach (var myRecurso in myMaterial.recursos)
+            var miMateriales = new List<Material>();
+
+
+
+
+            foreach (var myEquipamiento in myEquipamientos.AsReadOnly())
+                foreach (var myMaterial in myEquipamiento.materiales.AsReadOnly())
+                {
+                    var indiceMaterial=miMateriales.FindIndex(x=>x==myMaterial);
+                    if(indiceMaterial!=-1)
+                        miMateriales[indiceMaterial].cantidad += myEquipamiento.cantidad * myMaterial.cantidad ;
+                    else
                     {
-                      
-                        var indice = miRecursos.IndexOf(myRecurso);
+                        var MaterialAux = (Material)myMaterial.Clone();
+                        MaterialAux.cantidad *= myEquipamiento.cantidad;
+                        miMateriales.Add(MaterialAux);
+                    }
+                   foreach (var myRecurso in myMaterial.recursos)
+                    {
+
+                        var indice = miRecursos.FindIndex(x=>x.nombre==myRecurso.nombre);
                         if (indice != -1)
-                            miRecursos[indice].cantidad += myEquipamiento.cantidad * myMaterial.cantidad * myRecurso.cantidad;
+                            miRecursos[indice].cantidad += myEquipamiento.cantidad* myMaterial.cantidad * myRecurso.cantidad;
                         else
                         {
-                            myRecurso.cantidad *= myEquipamiento.cantidad * myMaterial.cantidad;
-                            miRecursos.Add(myRecurso);
+                            var myRecursoAux = (Recurso)myRecurso.Clone();
+                            myRecursoAux.cantidad =  myMaterial.cantidad*myRecurso.cantidad*myEquipamiento.cantidad;
+                            miRecursos.Add(myRecursoAux);
                         }
                     }
-            DGmateriales.ItemsSource = miRecursos.Where(x=>x.cantidad>0);
+                }
+            DGRecursos.ItemsSource = null;
+            DGmateriales.ItemsSource = null;
+
+           DGRecursos.ItemsSource = miRecursos.Where(x=>x.cantidad>0);
+            DGmateriales.ItemsSource = miMateriales.Where(x => x.cantidad > 0); 
 
         }
 
@@ -83,24 +105,25 @@ namespace Conqueros_Calculator
             {
 
                 if (!Int16.TryParse(myTextBox.Text, out Int16 cantidadEquipo))
-                    throw new Exception("mal");
+                    cantidadEquipo = 0;
 
-
+//Borro el equipamiento y borro los recursos
                 myEquipamientos.RemoveAll(x => x == myEquipamiento);
+
 
                 var myNewEquipamiento = myEquipamiento;
                 myNewEquipamiento.cantidad = cantidadEquipo;
                 myEquipamientos.Add(myNewEquipamiento);
-                Debug.WriteLine("mETO:" + cantidadEquipo);
+               // Debug.WriteLine("mETO:" + cantidadEquipo);
 
                 MuestraMateriales();
 
             }
             catch (Exception er)
             {
-                myTextBox.Text = "0";
+               /* myTextBox.Text = "0";
                 myTextBox.Background = Brushes.LightCoral;
-                Debug.WriteLine(er.Message);
+                Debug.WriteLine(er.Message);*/
 
             }
         }
@@ -131,6 +154,31 @@ namespace Conqueros_Calculator
         private void ChkOcultarNoUsados_Click(object sender, RoutedEventArgs e)
         {
             MuestraMateriales();
+        }
+
+        private void TxtEscudero_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.Escudero(0));
+        }
+
+        private void TxtAlabardero_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.Alabardero(0));
+        }
+
+        private void TxtArqueroFuego_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArqueroDeFuego(0));
+        }
+
+        private void TxtBallesteroMercenario_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.BallesteroMercenario(0));
+        }
+
+        private void TxtArcabuquero_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArcabuceroMercenario(0));
         }
     }
 }

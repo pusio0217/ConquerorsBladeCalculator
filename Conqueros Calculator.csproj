@@ -71,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="modelos\Equipamiento.cs" />
+    <Compile Include="modelos\Funciones.cs" />
     <Compile Include="modelos\Material.cs" />
     <Compile Include="modelos\Recurso.cs" />
     <Compile Include="modelos\Tipos.cs" />
@@ -103,7 +104,7 @@
     <Resource Include="images\lanceroSeñorio.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\cueroCurtado.PNG" />
+    <Resource Include="images\cueroCurtido.PNG" />
     <Resource Include="images\hierroBruto.PNG" />
     <Resource Include="images\telaAspera.PNG" />
   </ItemGroup>
@@ -124,10 +125,91 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\ballesteroSeñorio.PNG" />
-    <Resource Include="images\Coustilleux.PNG" />
+    <Resource Include="images\coustilleux.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\plata.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\piedraBruto.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\telaBarata.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\hierroFundido.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cobreMejorado.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cueroTratado.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\maderaAlisada.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\piedraCortada.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\algodonAlta.PNG" />
+    <Resource Include="images\algodonMedia.PNG" />
+    <Resource Include="images\algodonMejor.PNG" />
+    <Resource Include="images\algodonPoca.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\siderita.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\pielCabra.PNG" />
+    <Resource Include="images\pielCerdo.PNG" />
+    <Resource Include="images\pielOveja.PNG" />
+    <Resource Include="images\pielVaca.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\magnetita.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\maderaCedro.PNG" />
+    <Resource Include="images\maderaFresno.PNG" />
+    <Resource Include="images\maderaPino.PNG" />
+    <Resource Include="images\maderaRoble.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\limonita.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cuprita.PNG" />
+    <Resource Include="images\digenita.PNG" />
+    <Resource Include="images\hematita.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\calcopirita.PNG" />
+    <Resource Include="images\calcosina.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arenisca.PNG" />
+    <Resource Include="images\granito.PNG" />
+    <Resource Include="images\marmol.PNG" />
+    <Resource Include="images\rocaCaliza.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\estaño.PNG" />
+    <Resource Include="images\gomaLaca.PNG" />
+    <Resource Include="images\lino.PNG" />
+    <Resource Include="images\tendones.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\calamina.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arcabuqueroMercenario.PNG" />
+    <Resource Include="images\arqueroFuego.PNG" />
+    <Resource Include="images\ballesteroMercenario.PNG" />
+    <Resource Include="images\escudero.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\alabardero.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

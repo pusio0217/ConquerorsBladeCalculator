@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace Conqueros_Calculator.modelos
 {
-    public class Material
+   
+    public class Material: ICloneable
     {
 
-
+        public Brush color
+        {
+            get
+            {
+                return Funciones.ColorFromRareza(this.rareza);
+            }
+        }
         public static bool operator ==(Material e1, Material e2)
         {
             return e1.nombre == e2.nombre;
@@ -19,22 +27,23 @@ namespace Conqueros_Calculator.modelos
             return e1.nombre != e2.nombre;
         }
 
-
-
-        public string nombre;
+        private string _imagen;
+        public string imagen { get { return "images/" + _imagen; } set { _imagen = value; }}
+        public string nombre { get; set; }
         public int costePlata;
         public List<Recurso> recursos;
-        public int cantidad;
+        public int cantidad { get; set; }
         public Rareza rareza;
 
 
-        public Material(string nombre, int costePlata, List<Recurso> recursos, int cantidad, Rareza rareza)
+        public Material(string nombre, int costePlata, List<Recurso> recursos, int cantidad, Rareza rareza,string imagen)
         {
             this.nombre = nombre;
             this.costePlata = costePlata;
             this.recursos = recursos;
             this.cantidad = cantidad;
             this.rareza = rareza;
+            this.imagen = imagen;
         }
 
 
@@ -47,7 +56,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.AlgodonCalidadMedia(8),
                 Recurso.AlgodonAltaCalidad(7),
                 Recurso.AlgodonMejorCalidad(6)
-            }, cantidad, Rareza.Comun);
+            }, cantidad, Rareza.PocoComun,"telaAspera.PNG");
         }
 
         public static readonly string THierroBruto = "Hierro en bruto";
@@ -58,18 +67,18 @@ namespace Conqueros_Calculator.modelos
                 Recurso.Magnetita(8),
                 Recurso.Limonita(7),
                 Recurso.Hematita(6)
-            }, cantidad, Rareza.Comun);
+            }, cantidad, Rareza.PocoComun, "hierroBruto.PNG");
         }
 
         public static readonly string TCobreBruto = "Cobre en bruto";
         public static Material CobreBruto(int cantidad)
         {
-            return new Material(TTelaAspera, 2, new List<Recurso> {
+            return new Material(TCobreBruto, 2, new List<Recurso> {
                 Recurso.Calcopirita(10),
                 Recurso.Calcosina(8),
                 Recurso.Digenita(7),
                 Recurso.Cuprita(6)
-            }, cantidad, Rareza.Comun);
+            }, cantidad, Rareza.PocoComun, "cobreBruto.PNG");
         }
         public static readonly string TCueroCurtido = "Cuero curtido";
         public static Material CueroCurtido(int cantidad)
@@ -79,7 +88,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.Oveja(8),
                 Recurso.Cabra(7),
                 Recurso.Vaca(6)
-            }, cantidad, Rareza.Comun);
+            }, cantidad, Rareza.PocoComun, "cueroCurtido.PNG");
         }
         public static readonly string TMaderaSeca = "Madera seca";
         public static Material MaderaSeca(int cantidad)
@@ -89,7 +98,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.Fresno(8),
                 Recurso.Roble(7),
                 Recurso.Cedro(6)
-            }, cantidad, Rareza.Comun);
+            }, cantidad, Rareza.PocoComun, "maderaSeca.PNG");
         }
 
         public static readonly string TPiedraBruto = "Piedra en bruto";
@@ -100,7 +109,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.RocaCaliza(8),
                 Recurso.Marmol(7),
                 Recurso.Granito(6)
-            }, cantidad, Rareza.Comun);
+            }, cantidad, Rareza.PocoComun, "piedraBruto.PNG");
         }
         #endregion
         #region poco comunes
@@ -114,7 +123,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.AlgodonMejorCalidad(7),
                 Recurso.Lino(1)
 
-            }, cantidad, Rareza.PocoComun);
+            }, cantidad, Rareza.Raro, "telaBarata.PNG");
         }
 
         public static readonly string THierroFundido = "Hierro Fundido";
@@ -127,7 +136,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.Hematita(7),
                 Recurso.Calamina(1)
 
-            }, cantidad, Rareza.PocoComun);
+            }, cantidad, Rareza.Raro, "hierroFundido.PNG");
         }
 
         public static readonly string TCobreMejorado = "Cobre mejorado";
@@ -136,11 +145,11 @@ namespace Conqueros_Calculator.modelos
             return new Material(TCobreMejorado, 5, new List<Recurso> {
                 Recurso.Calcopirita(25),
                 Recurso.Calcosina(10),
-                Recurso.Limonita(8),
-                Recurso.Hematita(7),
+                Recurso.Digenita(8),
+                Recurso.Cuprita(7),
                 Recurso.Estaño(1)
 
-            }, cantidad, Rareza.PocoComun);
+            }, cantidad, Rareza.Raro, "cobreMejorado.PNG");
         }
         public static readonly string TCueroTratado = "Cuero tratado";
         public static Material CueroTratado(int cantidad)
@@ -152,7 +161,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.Vaca(7),
                 Recurso.GomaLaca(1)
 
-            }, cantidad, Rareza.PocoComun);
+            }, cantidad, Rareza.Raro, "cueroTratado.PNG");
         }
 
         public static readonly string TMaderaAlisada = "Madera Alisada";
@@ -165,7 +174,7 @@ namespace Conqueros_Calculator.modelos
                 Recurso.Cedro(7),
                 Recurso.Tendones(1)
 
-            }, cantidad, Rareza.PocoComun);
+            }, cantidad, Rareza.Raro, "maderaAlisada.PNG");
         }
 
         public static readonly string TPiedraCortada = "Piedra cortada";
@@ -175,9 +184,14 @@ namespace Conqueros_Calculator.modelos
                 Recurso.Arenisca(25),
                 Recurso.RocaCaliza(10),
                 Recurso.Marmol(8),
-                Recurso.Granate(7),
+                Recurso.Granito(7),
                
-            }, cantidad, Rareza.PocoComun);
+            }, cantidad, Rareza.Raro, "piedraCortada.PNG");
+        }
+
+        public object Clone()
+        {
+            return this.MemberwiseClone();
         }
         #endregion
 
