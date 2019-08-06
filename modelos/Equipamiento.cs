@@ -129,7 +129,85 @@ namespace Conqueros_Calculator.modelos
                 );
         }
 
-      
+        public static Equipamiento HombreDeArmas(int cantidad)
+        {
+            return new Equipamiento(cantidad, 100, "Hombre de armas",
+                new List<Material> {Material.HierroPuro(3),
+                                    Material.CobreRefinado(3),
+                                    Material.CueroPerfeccionado(3),
+                                     Material.TelaExcelente(2)},
+                Rareza.Epico
+                );
+        }
+
+        public static Equipamiento SargentoLancero(int cantidad)
+        {
+            return new Equipamiento(cantidad, 100, "Sargento lancero",
+                new List<Material> {Material.HierroPuro(3),
+                                    Material.MaderaCompuesta(3),
+                                    Material.CueroPerfeccionado(3),
+                                     Material.TelaExcelente(3)},
+                Rareza.Epico
+                );
+        }
+
+        public static Equipamiento SargentoJabalinero(int cantidad)
+        {
+            return new Equipamiento(cantidad, 100, "Sargento jabalinero",
+                new List<Material> {Material.HierroPuro(3),
+                                    Material.CobrePuro(3),
+                                    Material.CueroPerfeccionado(3),
+                                     Material.MaderaCompuesta(3)},
+                Rareza.Epico
+                );
+        }
+
+        public static Equipamiento SargentoAlabardero(int cantidad)
+        {
+            return new Equipamiento(cantidad, 100, "Sargento alabardero",
+                new List<Material> {Material.HierroPuro(4),
+                                    Material.CobrePuro(4),
+                                    Material.CueroHervido(4),
+                                     Material.MaderaCompuesta(4)},
+                Rareza.Epico
+                );
+        }
+
+        public static Equipamiento ArqueroMercenario(int cantidad)
+        {
+            return new Equipamiento(cantidad, 100, "Arquero Mercenario",
+                new List<Material> {Material.HierroPuro(2),
+                                    Material.CobrePuro(2),
+                                    Material.CueroPerfeccionado(2),
+                                     Material.MaderaCompuesta(2)},
+                Rareza.Epico
+                );
+        }
+
+        public static Equipamiento FusileroKriegsrat(int cantidad)
+        {
+            return new Equipamiento(cantidad, 100, "Fusilero Kriegsrat",
+                new List<Material> {Material.HierroPuro(4),
+                                    Material.CobrePuro(4),
+                                    Material.CueroHervido(3),
+                                     Material.TelaExcelente(3)},
+                Rareza.Epico
+                );
+        }
+
+        public static Equipamiento LanceroYeoman(int cantidad)
+        {
+            return new Equipamiento(cantidad, 100, "Lancero Yeoman",
+                new List<Material> {Material.HierroPuro(5),
+                                    Material.CobrePuro(3),
+                                    Material.CueroHervido(5),
+                                     Material.TelaExcelente(3)},
+                Rareza.Epico
+                );
+        }
+
+
+
     }
 
 }

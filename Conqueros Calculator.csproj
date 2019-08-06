@@ -73,6 +73,8 @@
     <Compile Include="modelos\Equipamiento.cs" />
     <Compile Include="modelos\Funciones.cs" />
     <Compile Include="modelos\Material.cs" />
+    <Compile Include="modelos\MaterialesRaros.cs" />
+    <Compile Include="modelos\MaterialPocoComun.cs" />
     <Compile Include="modelos\Recurso.cs" />
     <Compile Include="modelos\Tipos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -210,6 +212,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\alabardero.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\bauxita.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\hierroPuro.PNG" />
+    <Resource Include="images\sargentoLancero.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

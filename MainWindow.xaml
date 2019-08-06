@@ -91,13 +91,18 @@
                         <Label  Foreground="DeepSkyBlue"  Content="Arcabuquero Mercenario" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
                         <TextBox x:Name="txtArcabuquero"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" TextChanged="TxtArcabuquero_TextChanged"/>
                     </Grid>
+                    <Grid>
+                        <Image x:Name="imgSargentoLancero" HorizontalAlignment="Left" Width="50" Height="50" Source="images/sargentoLancero.PNG" Cursor="Help" />
+                        <Label  Foreground="MediumOrchid"  Content="Sargento lancero" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+                        <TextBox x:Name="txtSargentoLancero"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextChanged="TxtSargentoLancero_TextChanged"  TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" />
+                    </Grid>
                 </StackPanel>
             </TabItem>
             <TabItem Header="China" >
                
             </TabItem>
         </TabControl>
-        <DataGrid x:Name="DGmateriales"  RowBackground="Transparent"  Background="Transparent" AutoGenerateColumns="False"  Width="312" HeadersVisibility="None" Margin="327,23,355,24">
+        <DataGrid x:Name="DGmateriales"  RowBackground="Transparent"  Background="Transparent" GridLinesVisibility="Horizontal"  AutoGenerateColumns="False"  Width="312" HeadersVisibility="None" Margin="327,23,355,24">
 
 
 
@@ -107,7 +112,7 @@
                 <DataGridTemplateColumn  Width="50" IsReadOnly="True">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding imagen}"  Width="50" Height="50" Stretch="None"/>
+                            <Image Source="{Binding imagen}"   Width="50" Height="50" Stretch="UniformToFill"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>
@@ -135,7 +140,7 @@
                 <DataGridTemplateColumn  Width="50" IsReadOnly="True">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
-                            <Image Source="{Binding imagen}"  Width="50" Height="50" Stretch="None"/>
+                            <Image Source="{Binding imagen}"  Width="50" Height="50" Stretch="UniformToFill"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
                 </DataGridTemplateColumn>

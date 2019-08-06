@@ -22,6 +22,7 @@ namespace Conqueros_Calculator.modelos
         public readonly static string TAlgodonMediaCalidad = "Algodon media calidad";
         public readonly static string TAlgodonAltaCalidad = "Algodon alta calidad";
         public readonly static string TAlgodonMejorCalidad = "Algodon mejor calidad";
+        public readonly static string TAlgodonNube = "Algodon de nube";
 
         /// <summary>
         /// Hierro
@@ -30,7 +31,7 @@ namespace Conqueros_Calculator.modelos
         public readonly static string THierroMagnetita = "Magnetita";
         public readonly static string THierroLimonita = "Limonita";
         public readonly static string THierroHematita = "Hematita";
-
+        public readonly static string TTungsteno = "Tungsteno";
         /// <summary>
         /// Cobre
         /// </summary>
@@ -138,7 +139,15 @@ namespace Conqueros_Calculator.modelos
         {
             return new Recurso(TAlgodonMejorCalidad, cantidad, Rareza.Epico,"algodonMejor.PNG");
         }
+        public static Recurso AlgodonNube(int cantidad)
+        {
+            return new Recurso(TAlgodonNube, cantidad, Rareza.PocoComun, "");
+        }
 
+        public static Recurso Tungsteno(int cantidad)
+        {
+            return new Recurso(TTungsteno, cantidad, Rareza.PocoComun, "");
+        }
 
         public static Recurso Siderita(int cantidad)
         {
@@ -256,7 +265,7 @@ namespace Conqueros_Calculator.modelos
 
         public static Recurso BauxitaMontaña(int cantidad)
         {
-            return new Recurso(TBauxitaMontaña, cantidad, Rareza.Epico,"");
+            return new Recurso(TBauxitaMontaña, cantidad, Rareza.Epico,"bauxita.PNG");
         }
         public static Recurso Fosforo(int cantidad)
         {

@@ -180,5 +180,11 @@ namespace Conqueros_Calculator
         {
             ActualizarListado((TextBox)sender, Equipamiento.ArcabuceroMercenario(0));
         }
+
+        private void TxtSargentoLancero_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+            ActualizarListado((TextBox)sender, Equipamiento.SargentoLancero(0));
+        }
     }
 }
