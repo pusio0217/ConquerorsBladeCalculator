@@ -56,6 +56,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Properties\en.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Properties\es.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -70,15 +78,25 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="modelos\Equipamiento.cs" />
-    <Compile Include="modelos\Funciones.cs" />
-    <Compile Include="modelos\Material.cs" />
-    <Compile Include="modelos\MaterialesRaros.cs" />
-    <Compile Include="modelos\MaterialPocoComun.cs" />
-    <Compile Include="modelos\Recurso.cs" />
-    <Compile Include="modelos\Tipos.cs" />
+    <Compile Include="clases\Equipamiento.cs" />
+    <Compile Include="clases\Funciones.cs" />
+    <Compile Include="clases\Material.cs" />
+    <Compile Include="clases\MaterialesRaros.cs" />
+    <Compile Include="clases\MaterialPocoComun.cs" />
+    <Compile Include="clases\Recurso.cs" />
+    <Compile Include="clases\Tipos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\idiomaES.Designer.cs">
+      <DependentUpon>idiomaES.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\idioma.Designer.cs">
+      <DependentUpon>idioma.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -90,6 +108,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\idiomaES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>idiomaES.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\idioma.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>idioma.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -219,6 +245,59 @@
   <ItemGroup>
     <Resource Include="images\hierroPuro.PNG" />
     <Resource Include="images\sargentoLancero.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\carbon.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cueroPerfeccionado.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\telaExcelente.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\algodonMontaña.PNG" />
+    <Resource Include="images\maderaCompuesta.PNG" />
+    <Resource Include="images\pelajes.PNG" />
+    <Resource Include="images\pielBisonte.PNG" />
+    <Resource Include="images\tejo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arqueroMercenario.PNG" />
+    <Resource Include="images\hombreArmas.PNG" />
+    <Resource Include="images\kriegsrat.PNG" />
+    <Resource Include="images\lanceroYeoman.PNG" />
+    <Resource Include="images\sargentoAlabardero.PNG" />
+    <Resource Include="images\sargentoJabalinero.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cobrePuro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\fosforo.PNG" />
+    <Resource Include="images\minio.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\alumbre.PNG" />
+    <Resource Include="images\nitratoPotasio.PNG" />
+    <Resource Include="images\pelajeLoboMontaña.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="funciones\" />
+    <Folder Include="idiomas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\english.png" />
+    <Resource Include="images\spain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\algodonNube.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\tungsteno.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\manganesoNegro.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

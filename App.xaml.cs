@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Conqueros_Calculator
+namespace Conquerors_Calculator
 {
     /// <summary>
     /// Lógica de interacción para App.xaml

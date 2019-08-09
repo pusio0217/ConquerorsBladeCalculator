@@ -1,7 +1,8 @@
-﻿using Conqueros_Calculator.modelos;
+﻿using Conquerors_Calculator.modelos;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Conqueros_Calculator
+namespace Conquerors_Calculator
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
@@ -24,7 +25,7 @@ namespace Conqueros_Calculator
     public partial class MainWindow : Window
     {
 
-
+        ICollectionView cv;
         public List<Equipamiento> myEquipamientos;// { new EquipamientoCantidad { equipamiento = lanceroSeñorio, cantidad = 3 } };
 
         public MainWindow()
@@ -42,13 +43,13 @@ namespace Conqueros_Calculator
 
 
 
-          /*  txtCueroCurtido.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCueroCurtido).Sum(y => y.cantidad))).ToString("N0");
-            txtHierroBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.THierroBruto).Sum(y => y.cantidad))).ToString("N0");
-            txtTelaAspera.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TTelaAspera).Sum(y => y.cantidad))).ToString("N0");
-            txtMaderaSeca.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TMaderaSeca).Sum(y => y.cantidad))).ToString("N0");
-            txtCobreBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCobreBruto).Sum(y => y.cantidad))).ToString("N0");
-            */
-          
+            /*  txtCueroCurtido.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCueroCurtido).Sum(y => y.cantidad))).ToString("N0");
+              txtHierroBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.THierroBruto).Sum(y => y.cantidad))).ToString("N0");
+              txtTelaAspera.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TTelaAspera).Sum(y => y.cantidad))).ToString("N0");
+              txtMaderaSeca.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TMaderaSeca).Sum(y => y.cantidad))).ToString("N0");
+              txtCobreBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCobreBruto).Sum(y => y.cantidad))).ToString("N0");
+              */
+
 
             var miRecursos = new List<Recurso>();
             var miMateriales = new List<Material>();
@@ -59,25 +60,25 @@ namespace Conqueros_Calculator
             foreach (var myEquipamiento in myEquipamientos.AsReadOnly())
                 foreach (var myMaterial in myEquipamiento.materiales.AsReadOnly())
                 {
-                    var indiceMaterial=miMateriales.FindIndex(x=>x==myMaterial);
-                    if(indiceMaterial!=-1)
-                        miMateriales[indiceMaterial].cantidad += myEquipamiento.cantidad * myMaterial.cantidad ;
+                    var indiceMaterial = miMateriales.FindIndex(x => x == myMaterial);
+                    if (indiceMaterial != -1)
+                        miMateriales[indiceMaterial].cantidad += myEquipamiento.cantidad * myMaterial.cantidad;
                     else
                     {
                         var MaterialAux = (Material)myMaterial.Clone();
                         MaterialAux.cantidad *= myEquipamiento.cantidad;
                         miMateriales.Add(MaterialAux);
                     }
-                   foreach (var myRecurso in myMaterial.recursos)
+                    foreach (var myRecurso in myMaterial.recursos)
                     {
 
-                        var indice = miRecursos.FindIndex(x=>x.nombre==myRecurso.nombre);
+                        var indice = miRecursos.FindIndex(x => x.nombre == myRecurso.nombre);
                         if (indice != -1)
-                            miRecursos[indice].cantidad += myEquipamiento.cantidad* myMaterial.cantidad * myRecurso.cantidad;
+                            miRecursos[indice].cantidad += myEquipamiento.cantidad * myMaterial.cantidad * myRecurso.cantidad;
                         else
                         {
                             var myRecursoAux = (Recurso)myRecurso.Clone();
-                            myRecursoAux.cantidad =  myMaterial.cantidad*myRecurso.cantidad*myEquipamiento.cantidad;
+                            myRecursoAux.cantidad = myMaterial.cantidad * myRecurso.cantidad * myEquipamiento.cantidad;
                             miRecursos.Add(myRecursoAux);
                         }
                     }
@@ -85,9 +86,9 @@ namespace Conqueros_Calculator
             DGRecursos.ItemsSource = null;
             DGmateriales.ItemsSource = null;
 
-           DGRecursos.ItemsSource = miRecursos.Where(x=>x.cantidad>0);
-            DGmateriales.ItemsSource = miMateriales.Where(x => x.cantidad > 0); 
-
+            DGRecursos.ItemsSource = miRecursos.Where(x => x.cantidad > 0);
+            DGmateriales.ItemsSource = miMateriales.Where(x => x.cantidad > 0);
+            cv = CollectionViewSource.GetDefaultView(DGRecursos.ItemsSource);
         }
 
         private void TxtLanceroSeñorio_TextChanged(object sender, TextChangedEventArgs e)
@@ -107,23 +108,23 @@ namespace Conqueros_Calculator
                 if (!Int16.TryParse(myTextBox.Text, out Int16 cantidadEquipo))
                     cantidadEquipo = 0;
 
-//Borro el equipamiento y borro los recursos
+                //Borro el equipamiento y borro los recursos
                 myEquipamientos.RemoveAll(x => x == myEquipamiento);
 
 
                 var myNewEquipamiento = myEquipamiento;
                 myNewEquipamiento.cantidad = cantidadEquipo;
                 myEquipamientos.Add(myNewEquipamiento);
-               // Debug.WriteLine("mETO:" + cantidadEquipo);
+                // Debug.WriteLine("mETO:" + cantidadEquipo);
 
                 MuestraMateriales();
 
             }
             catch (Exception er)
             {
-               /* myTextBox.Text = "0";
-                myTextBox.Background = Brushes.LightCoral;
-                Debug.WriteLine(er.Message);*/
+                /* myTextBox.Text = "0";
+                 myTextBox.Background = Brushes.LightCoral;
+                 Debug.WriteLine(er.Message);*/
 
             }
         }
@@ -186,5 +187,112 @@ namespace Conqueros_Calculator
 
             ActualizarListado((TextBox)sender, Equipamiento.SargentoLancero(0));
         }
+
+
+
+        private void DGmateriales_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var materialesSeleccionados = DGmateriales.SelectedItems;
+            if (materialesSeleccionados.Count > 1)
+            {
+                var recursosRojos = ((List<Material>)materialesSeleccionados).Select(x => x.recursos.Select(z => z.nombre));
+
+
+
+            }
+        }
+
+        private void TxtHombreArmas_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.HombreDeArmas(0));
+        }
+
+        private void TxtSargentoJabalinero_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.SargentoJabalinero(0));
+        }
+
+        private void TxtSargentoAlabardero_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.SargentoAlabardero(0));
+        }
+
+        private void TxtArqueroMercenario_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArqueroMercenario(0));
+        }
+
+        private void TxtFusileroKriegsrat_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.FusileroKriegsrat(0));
+        }
+
+        private void TxtLanceroYeoman_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.LanceroYeoman(0));
+        }
+
+
+
+        private void ImgSpain_Click(object sender, RoutedEventArgs e)
+        {
+           
+            ResourceDictionary dict = new ResourceDictionary();
+            dict.Source = new Uri("Properties/es.xaml",
+                     UriKind.RelativeOrAbsolute);
+            this.Resources.MergedDictionaries.Add(dict);
+        }
+
+
+
+
+        private void ImgEnglish_Click(object sender, RoutedEventArgs e)
+        {
+          
+            ResourceDictionary dict = new ResourceDictionary();
+            dict.Source = new Uri("Properties/en.xaml",
+                     UriKind.RelativeOrAbsolute);
+            this.Resources.MergedDictionaries.Add(dict);
+        }
+
+
+
+
+
+        private List<Predicate<Recurso>> criteria = new List<Predicate<Recurso>>();
+        private void CheckBox_Click(object sender, RoutedEventArgs e)
+        {
+
+            Filtrar();
+        }
+
+
+
+        private void Filtrar() {
+            cv.Filter = o =>
+            {
+                Recurso p = o as Recurso;
+
+                if (chkExoticos.IsChecked.Value)
+                    return p.tipo == Recurso.Tipo.Exotico;                //Si esta chequeado y es comun se muestra.
+                if (p.tipo == Recurso.Tipo.Exotico)
+                    return true;
+                if (p.rareza == Rareza.Comun)
+                    return chkComunes.IsChecked.Value;
+                if (p.rareza == Rareza.PocoComun)
+                    return chkPocoComunes.IsChecked.Value;
+                if (p.rareza == Rareza.Raro)
+                    return chkRaros.IsChecked.Value;
+
+                if (p.rareza == Rareza.Epico)
+                    return chkEpicos.IsChecked.Value;
+              
+
+                return false;
+
+            };
+        }
+
+      
     }
 }

@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="aceitelinaza" xml:space="preserve">
+    <value>aceitelinaza</value>
+  </data>
+  <data name="alerce" xml:space="preserve">
+    <value>alerce</value>
+  </data>
+  <data name="algodonAltaCalidad" xml:space="preserve">
+    <value>algodonAltaCalidad</value>
+  </data>
+  <data name="algodonMediaCalidad" xml:space="preserve">
+    <value>algodonMediaCalidad</value>
+  </data>
+  <data name="algodonMejorCalidad" xml:space="preserve">
+    <value>algodonMejorCalidad</value>
+  </data>
+  <data name="algodonMontaña" xml:space="preserve">
+    <value>algodonMontaña</value>
+  </data>
+  <data name="algodonNube" xml:space="preserve">
+    <value>algodonNube</value>
+  </data>
+  <data name="algodonPocaCalidad" xml:space="preserve">
+    <value>algodonPocaCalidad</value>
+  </data>
+  <data name="almizcle" xml:space="preserve">
+    <value>almizcle</value>
+  </data>
+  <data name="alumbre" xml:space="preserve">
+    <value>alumbre</value>
+  </data>
+  <data name="ambar" xml:space="preserve">
+    <value>ambar</value>
+  </data>
+  <data name="arenisca" xml:space="preserve">
+    <value>arenisca</value>
+  </data>
+  <data name="bauxitamontaña" xml:space="preserve">
+    <value>bauxitamontaña</value>
+  </data>
+  <data name="cabra" xml:space="preserve">
+    <value>cabra</value>
+  </data>
+  <data name="calamina" xml:space="preserve">
+    <value>calamina</value>
+  </data>
+  <data name="calcopirita" xml:space="preserve">
+    <value>calcopirita</value>
+  </data>
+  <data name="calcosina" xml:space="preserve">
+    <value>calcosina</value>
+  </data>
+  <data name="carbon" xml:space="preserve">
+    <value>carbon</value>
+  </data>
+  <data name="cañamo" xml:space="preserve">
+    <value>cañamo</value>
+  </data>
+  <data name="cedro" xml:space="preserve">
+    <value>cedro</value>
+  </data>
+  <data name="cerdo" xml:space="preserve">
+    <value>cerdo</value>
+  </data>
+  <data name="cobreBruto" xml:space="preserve">
+    <value>cobreBruto</value>
+  </data>
+  <data name="cobreMejorado" xml:space="preserve">
+    <value>cobreMejorado</value>
+  </data>
+  <data name="cobrePuro" xml:space="preserve">
+    <value>cobrePuro</value>
+  </data>
+  <data name="cobreRefinado" xml:space="preserve">
+    <value>cobreRefinado</value>
+  </data>
+  <data name="cueroCurtido" xml:space="preserve">
+    <value>cueroCurtido</value>
+  </data>
+  <data name="cueroHervido" xml:space="preserve">
+    <value>cueroHervido</value>
+  </data>
+  <data name="cueroPerfeccionado" xml:space="preserve">
+    <value>cueroPerfeccionado</value>
+  </data>
+  <data name="cueroTratado" xml:space="preserve">
+    <value>cueroTratado</value>
+  </data>
+  <data name="cuprita" xml:space="preserve">
+    <value>cuprita</value>
+  </data>
+  <data name="digenita" xml:space="preserve">
+    <value>digenita</value>
+  </data>
+  <data name="estaño" xml:space="preserve">
+    <value>estaño</value>
+  </data>
+  <data name="fosforo" xml:space="preserve">
+    <value>fosforo</value>
+  </data>
+  <data name="fresno" xml:space="preserve">
+    <value>fresno</value>
+  </data>
+  <data name="gomalaca" xml:space="preserve">
+    <value>gomalaca</value>
+  </data>
+  <data name="granate" xml:space="preserve">
+    <value>granate</value>
+  </data>
+  <data name="granito" xml:space="preserve">
+    <value>granito</value>
+  </data>
+  <data name="hematita" xml:space="preserve">
+    <value>hematita</value>
+  </data>
+  <data name="hierroBruto" xml:space="preserve">
+    <value>hierroBruto</value>
+  </data>
+  <data name="hierroForjado" xml:space="preserve">
+    <value>hierroForjado</value>
+  </data>
+  <data name="hierroFundido" xml:space="preserve">
+    <value>hierroFundido</value>
+  </data>
+  <data name="hierroPuro" xml:space="preserve">
+    <value>hierroPuro</value>
+  </data>
+  <data name="limonita" xml:space="preserve">
+    <value>limonita</value>
+  </data>
+  <data name="lino" xml:space="preserve">
+    <value>lino</value>
+  </data>
+  <data name="maderaAlisada" xml:space="preserve">
+    <value>maderaAlisada</value>
+  </data>
+  <data name="maderaCompuesta" xml:space="preserve">
+    <value>maderaCompuesta</value>
+  </data>
+  <data name="maderaSeca" xml:space="preserve">
+    <value>maderaSeca</value>
+  </data>
+  <data name="magnetita" xml:space="preserve">
+    <value>magnetita</value>
+  </data>
+  <data name="manganesoNegro" xml:space="preserve">
+    <value>manganesoNegro</value>
+  </data>
+  <data name="marmol" xml:space="preserve">
+    <value>marmol</value>
+  </data>
+  <data name="minio" xml:space="preserve">
+    <value>minio</value>
+  </data>
+  <data name="nitratopotasio" xml:space="preserve">
+    <value>nitratopotasio</value>
+  </data>
+  <data name="oveja" xml:space="preserve">
+    <value>oveja</value>
+  </data>
+  <data name="pelajelobomontaña" xml:space="preserve">
+    <value>pelajelobomontaña</value>
+  </data>
+  <data name="pelajes" xml:space="preserve">
+    <value>pelajes</value>
+  </data>
+  <data name="piedraBruto" xml:space="preserve">
+    <value>piedraBruto</value>
+  </data>
+  <data name="piedraCortada" xml:space="preserve">
+    <value>piedraCortada</value>
+  </data>
+  <data name="piedraDetallada" xml:space="preserve">
+    <value>piedraDetallada</value>
+  </data>
+  <data name="piedralunar" xml:space="preserve">
+    <value>piedralunar</value>
+  </data>
+  <data name="piedraPerfeccionada" xml:space="preserve">
+    <value>piedraPerfeccionada</value>
+  </data>
+  <data name="pielbisonte" xml:space="preserve">
+    <value>pielbisonte</value>
+  </data>
+  <data name="pino" xml:space="preserve">
+    <value>pino</value>
+  </data>
+  <data name="roble" xml:space="preserve">
+    <value>roble</value>
+  </data>
+  <data name="rocaCaliza" xml:space="preserve">
+    <value>rocaCaliza</value>
+  </data>
+  <data name="seda" xml:space="preserve">
+    <value>seda</value>
+  </data>
+  <data name="siderita" xml:space="preserve">
+    <value>siderita</value>
+  </data>
+  <data name="tejo" xml:space="preserve">
+    <value>tejo</value>
+  </data>
+  <data name="telaAspera" xml:space="preserve">
+    <value>telaAspera</value>
+  </data>
+  <data name="telaBarata" xml:space="preserve">
+    <value>telaBarata</value>
+  </data>
+  <data name="telaExceletne" xml:space="preserve">
+    <value>telaExceletne</value>
+  </data>
+  <data name="tendones" xml:space="preserve">
+    <value>tendones</value>
+  </data>
+  <data name="tungsteno" xml:space="preserve">
+    <value>tungsteno</value>
+  </data>
+  <data name="turquesa" xml:space="preserve">
+    <value>turquesa</value>
+  </data>
+  <data name="vaca" xml:space="preserve">
+    <value>vaca</value>
+  </data>
+</root>

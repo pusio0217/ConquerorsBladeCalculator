@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace Conqueros_Calculator.modelos
+namespace Conquerors_Calculator.modelos
 {
     public class Funciones
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Conqueros_Calculator.Properties
+namespace Conquerors_Calculator.Properties
 {
 
 

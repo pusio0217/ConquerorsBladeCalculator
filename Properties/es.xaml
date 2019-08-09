@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+
+    <system:String x:Key="lanceroSeñorio">Lancero de señorio</system:String>
+    <system:String x:Key="jabalineroSeñorio">Jabalinero de señorio</system:String>
+    <system:String x:Key="arqueroSeñorio">Arquero de señorio</system:String>
+    <system:String x:Key="ballesteroSeñorio">Ballestero de señorio</system:String>
+    <system:String x:Key="coustilleux">coustilleux</system:String>
+</ResourceDictionary>

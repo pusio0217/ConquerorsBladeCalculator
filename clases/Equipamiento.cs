@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conqueros_Calculator.modelos
+namespace Conquerors_Calculator.modelos
 {
   public  class Equipamiento
     {
