@@ -124,7 +124,7 @@ namespace Conquerors_Calculator.modelos
 
         public static Recurso Cerdo(int cantidad)
         {
-            return new Recurso(idioma.cedro, cantidad, Rareza.Comun,Origen.Curtiduria,Tipo.Normal,"pielCerdo.PNG");
+            return new Recurso(idioma.cerdo, cantidad, Rareza.Comun,Origen.Curtiduria,Tipo.Normal,"pielCerdo.PNG");
         }
         public static Recurso Oveja(int cantidad)
         {
