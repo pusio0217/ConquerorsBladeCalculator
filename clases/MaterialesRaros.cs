@@ -24,8 +24,20 @@ namespace Conquerors_Calculator.modelos
             }, cantidad, Rareza.Epico, "maderaCompuesta.PNG");
         }
 
+        public static Material MaderaBarnizada(int cantidad)
+        {
+            return new Material(idioma.maderaBarnizada, 20, new List<Recurso> {
+                Recurso.Roble(-5000),
+                Recurso.Cedro(-5000),
+                Recurso.Carbon(-5000),
+                Recurso.Tejo(-5000)
 
-     
+
+            }, cantidad, Rareza.Epico, "maderaCompuesta.PNG");
+        }
+
+
+
         public static Material CueroPerfeccionado(int cantidad)
         {
             return new Material(idioma.cueroPerfeccionado, 20, new List<Recurso> {
@@ -47,16 +59,16 @@ namespace Conquerors_Calculator.modelos
 
             }, cantidad, Rareza.Epico, "hierroPuro.PNG");
         }
-        public static readonly string TTelaCalidad = "Tela de calidad";
+       
         public static Material TelaCalidad(int cantidad)
         {
-            return new Material(TTelaCalidad, 20, new List<Recurso> {
+            return new Material(idioma.telaCalidad, 20, new List<Recurso> {
                 Recurso.AlgodonAltaCalidad(15),
                  Recurso.AlgodonMejorCalidad(10),
                 Recurso.Cañamo(1),
                 Recurso.AlgodonNube(1),
             
-            }, cantidad, Rareza.Epico, "");
+            }, cantidad, Rareza.Epico, "telaExcelente.PNG");
         }
 
       
@@ -79,7 +91,7 @@ namespace Conquerors_Calculator.modelos
                 Recurso.ManganesoNegro(1),
                 Recurso.Tungsteno(1),
 
-            }, cantidad, Rareza.Epico, "");
+            }, cantidad, Rareza.Epico, "hierroPuro.PNG");
         }
 
       

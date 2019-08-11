@@ -19,7 +19,15 @@ namespace Conquerors_Calculator.modelos
          Normal,Exotico
         }
 
-        public string descripcion { get { return idiomaES.ResourceManager.GetString(this.nombre); } }
+        public string descripcion
+        {
+            get
+            {
+                if (App.Current.Properties["language"].ToString() == "es")
+                    return idiomaES.ResourceManager.GetString(this.nombre);
+                return idiomaEN.ResourceManager.GetString(this.nombre);
+            }
+        }
 
 
         public Brush color
@@ -271,7 +279,7 @@ namespace Conquerors_Calculator.modelos
         }
         public static Recurso Cañamo(int cantidad)
         {
-            return new Recurso(idioma.cañamo, cantidad, Rareza.PocoComun,Origen.Algodon,Tipo.Exotico,"");
+            return new Recurso(idioma.cañamo, cantidad, Rareza.PocoComun,Origen.Algodon,Tipo.Exotico,"cañamo.PNG");
         }
         public static Recurso AlgodonMontaña(int cantidad)
         {

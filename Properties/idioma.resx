@@ -252,6 +252,9 @@
   <data name="maderaAlisada" xml:space="preserve">
     <value>maderaAlisada</value>
   </data>
+  <data name="maderaBarnizada" xml:space="preserve">
+    <value>maderaBarnizada</value>
+  </data>
   <data name="maderaCompuesta" xml:space="preserve">
     <value>maderaCompuesta</value>
   </data>
@@ -323,6 +326,9 @@
   </data>
   <data name="telaBarata" xml:space="preserve">
     <value>telaBarata</value>
+  </data>
+  <data name="telaCalidad" xml:space="preserve">
+    <value>telaCalidad</value>
   </data>
   <data name="telaExceletne" xml:space="preserve">
     <value>telaExceletne</value>

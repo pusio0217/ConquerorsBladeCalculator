@@ -466,6 +466,15 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a maderaBarnizada.
+        /// </summary>
+        internal static string maderaBarnizada {
+            get {
+                return ResourceManager.GetString("maderaBarnizada", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a maderaCompuesta.
         /// </summary>
         internal static string maderaCompuesta {
@@ -678,6 +687,15 @@ namespace Conqueros_Calculator.Properties {
         internal static string telaBarata {
             get {
                 return ResourceManager.GetString("telaBarata", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a telaCalidad.
+        /// </summary>
+        internal static string telaCalidad {
+            get {
+                return ResourceManager.GetString("telaCalidad", resourceCulture);
             }
         }
         

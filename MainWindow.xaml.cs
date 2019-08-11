@@ -33,7 +33,7 @@ namespace Conquerors_Calculator
             InitializeComponent();
 
             myEquipamientos = new List<Equipamiento>();
-
+            App.Current.Properties["language"] = "es";
         }
 
 
@@ -41,14 +41,6 @@ namespace Conquerors_Calculator
         {
 
 
-
-
-            /*  txtCueroCurtido.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCueroCurtido).Sum(y => y.cantidad))).ToString("N0");
-              txtHierroBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.THierroBruto).Sum(y => y.cantidad))).ToString("N0");
-              txtTelaAspera.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TTelaAspera).Sum(y => y.cantidad))).ToString("N0");
-              txtMaderaSeca.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TMaderaSeca).Sum(y => y.cantidad))).ToString("N0");
-              txtCobreBruto.Text = myEquipamientos.Sum(x => x.cantidad * (x.materiales.Where(z => z.nombre == Material.TCobreBruto).Sum(y => y.cantidad))).ToString("N0");
-              */
 
 
             var miRecursos = new List<Recurso>();
@@ -89,6 +81,7 @@ namespace Conquerors_Calculator
             DGRecursos.ItemsSource = miRecursos.Where(x => x.cantidad > 0);
             DGmateriales.ItemsSource = miMateriales.Where(x => x.cantidad > 0);
             cv = CollectionViewSource.GetDefaultView(DGRecursos.ItemsSource);
+            Filtrar();
         }
 
         private void TxtLanceroSeñorio_TextChanged(object sender, TextChangedEventArgs e)
@@ -236,11 +229,12 @@ namespace Conquerors_Calculator
 
         private void ImgSpain_Click(object sender, RoutedEventArgs e)
         {
-           
+            App.Current.Properties["language"] = "es";
             ResourceDictionary dict = new ResourceDictionary();
             dict.Source = new Uri("Properties/es.xaml",
                      UriKind.RelativeOrAbsolute);
             this.Resources.MergedDictionaries.Add(dict);
+            MuestraMateriales();
         }
 
 
@@ -248,11 +242,12 @@ namespace Conquerors_Calculator
 
         private void ImgEnglish_Click(object sender, RoutedEventArgs e)
         {
-          
+            App.Current.Properties["language"] = "en";
             ResourceDictionary dict = new ResourceDictionary();
             dict.Source = new Uri("Properties/en.xaml",
                      UriKind.RelativeOrAbsolute);
             this.Resources.MergedDictionaries.Add(dict);
+            MuestraMateriales();
         }
 
 
@@ -262,13 +257,14 @@ namespace Conquerors_Calculator
         private List<Predicate<Recurso>> criteria = new List<Predicate<Recurso>>();
         private void CheckBox_Click(object sender, RoutedEventArgs e)
         {
-
-            Filtrar();
+            if (cv != null)
+                Filtrar();
         }
 
 
 
-        private void Filtrar() {
+        private void Filtrar()
+        {
             cv.Filter = o =>
             {
                 Recurso p = o as Recurso;
@@ -286,13 +282,106 @@ namespace Conquerors_Calculator
 
                 if (p.rareza == Rareza.Epico)
                     return chkEpicos.IsChecked.Value;
-              
+
 
                 return false;
 
             };
         }
 
-      
+        private void TxtEspadachinHierro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.Espadachin(0));
+        }
+
+        private void TxtJabalineroMiliciano_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.JabalineroMiliciano(0));
+        }
+
+        private void TxtPiqueroMiliciano_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.PiqueroMiliciano(0));
+        }
+
+        private void TxtArqueroYelmoHierro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArqueroYelmoHierro(0));
+        }
+
+        private void TxtArcabuqueroYelmoHierro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArcabuqueroYelmoHierro(0));
+        }
+
+        private void TxtExploradorYelmoHierro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ExploradorYelmoHierro(0));
+        }
+
+        private void TxtArqueroMontadoHierro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArqueroMontadoHierro(0));
+        }
+
+        private void TxtGuardaPrefectura_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.GuardaPrefectura(0));
+        }
+
+        private void TxtLanceroHierro_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.LanceroYelmoHierro(0));
+        }
+
+        private void TxtPiqueroPrefectura_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.PiqueroPrefectura(0));
+        }
+
+        private void TxtArqueroVanguardia_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArqueroVanguardia(0));
+        }
+
+        private void TxtArqueroPrefectura_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArqueroPrefectura(0));
+        }
+
+        private void TxtGuardaPalacio_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.GuardaPalacio(0));
+        }
+
+        private void TxtLanceroGuardiaImperial_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.LanceroGuardaImperial(0));
+        }
+
+        private void TxtJabalineroImperial_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.JabalineroImperial(0));
+        }
+
+        private void TxtPiqueroImperial_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.PiqueroImperial(0));
+        }
+
+        private void TxtArqueroImperial_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.ArqueroImperial(0));
+        }
+
+        private void TxtCaballeroPrefectura_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.CaballeroPrefectura(0));
+        }
+
+        private void TxtLanceroHachaDaga_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            ActualizarListado((TextBox)sender, Equipamiento.LanceroHachaDaga(0));
+        }
     }
 }

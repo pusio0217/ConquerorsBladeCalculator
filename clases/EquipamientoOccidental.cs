@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Conquerors_Calculator.modelos
 {
-  public  class Equipamiento
+  public partial class Equipamiento
     {
         public int cantidad;
         public int costePlata;
@@ -14,14 +14,16 @@ namespace Conquerors_Calculator.modelos
         public List<Material> materiales;
         public Rareza rareza;
 
-        public static bool operator==(Equipamiento e1, Equipamiento e2) {
+
+        //Necesario para los removeall
+    public static bool operator==(Equipamiento e1, Equipamiento e2) {
             return e1.nombre == e2.nombre;
         }
         public static bool operator !=(Equipamiento e1, Equipamiento e2)
         {
             return e1.nombre != e2.nombre;
         }
-
+        
 
         public Equipamiento(int cantidad, int costePlata, string nombre, List<Material> materiales, Rareza rareza)
         {

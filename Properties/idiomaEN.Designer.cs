@@ -22,14 +22,14 @@ namespace Conqueros_Calculator.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class idiomaES {
+    internal class idiomaEN {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal idiomaES() {
+        internal idiomaEN() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Conqueros_Calculator.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Conqueros_Calculator.Properties.idiomaES", typeof(idiomaES).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Conqueros_Calculator.Properties.idiomaEN", typeof(idiomaEN).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Aceite de linaza.
+        ///   Busca una cadena traducida similar a Linseed oil.
         /// </summary>
         internal static string aceitelinaza {
             get {
@@ -70,7 +70,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Algodon alta calidad.
+        ///   Busca una cadena traducida similar a Long cotton.
         /// </summary>
         internal static string algodonAltaCalidad {
             get {
@@ -79,7 +79,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Algodon media calidad.
+        ///   Busca una cadena traducida similar a Coarse cotton.
         /// </summary>
         internal static string algodonMediaCalidad {
             get {
@@ -88,7 +88,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Algodon mejor calidad.
+        ///   Busca una cadena traducida similar a Fine Cotton.
         /// </summary>
         internal static string algodonMejorCalidad {
             get {
@@ -97,7 +97,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Algodon de montaña.
+        ///   Busca una cadena traducida similar a Mountain cotton.
         /// </summary>
         internal static string algodonMontaña {
             get {
@@ -106,7 +106,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Algodon nube.
+        ///   Busca una cadena traducida similar a Cloud cotton.
         /// </summary>
         internal static string algodonNube {
             get {
@@ -115,7 +115,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Algodon poca calidad.
+        ///   Busca una cadena traducida similar a Rough cotton.
         /// </summary>
         internal static string algodonPocaCalidad {
             get {
@@ -124,7 +124,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Almizcle.
+        ///   Busca una cadena traducida similar a Musk.
         /// </summary>
         internal static string almizcle {
             get {
@@ -133,7 +133,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Alumbre.
+        ///   Busca una cadena traducida similar a Alum.
         /// </summary>
         internal static string alumbre {
             get {
@@ -142,7 +142,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Ámbar.
+        ///   Busca una cadena traducida similar a Ámber.
         /// </summary>
         internal static string ambar {
             get {
@@ -151,7 +151,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Arenisca.
+        ///   Busca una cadena traducida similar a Sandstone.
         /// </summary>
         internal static string arenisca {
             get {
@@ -160,7 +160,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Bauxita de montaña.
+        ///   Busca una cadena traducida similar a Mountain bauxite.
         /// </summary>
         internal static string bauxitamontaña {
             get {
@@ -169,7 +169,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piel de cabra.
+        ///   Busca una cadena traducida similar a Goat hide.
         /// </summary>
         internal static string cabra {
             get {
@@ -178,7 +178,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Calamina.
+        ///   Busca una cadena traducida similar a Calamine.
         /// </summary>
         internal static string calamina {
             get {
@@ -187,7 +187,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Calcopirita.
+        ///   Busca una cadena traducida similar a Chalcopyrite.
         /// </summary>
         internal static string calcopirita {
             get {
@@ -196,7 +196,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Calcosina.
+        ///   Busca una cadena traducida similar a Chalcocite.
         /// </summary>
         internal static string calcosina {
             get {
@@ -205,7 +205,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cáñamo.
+        ///   Busca una cadena traducida similar a Hemp.
         /// </summary>
         internal static string cañamo {
             get {
@@ -214,7 +214,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Carbón.
+        ///   Busca una cadena traducida similar a Coal.
         /// </summary>
         internal static string carbon {
             get {
@@ -223,7 +223,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cedro.
+        ///   Busca una cadena traducida similar a Cedar.
         /// </summary>
         internal static string cedro {
             get {
@@ -232,7 +232,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piel de cerdo.
+        ///   Busca una cadena traducida similar a Pigskin.
         /// </summary>
         internal static string cerdo {
             get {
@@ -241,7 +241,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cobre en bruto.
+        ///   Busca una cadena traducida similar a Coarse copper.
         /// </summary>
         internal static string cobreBruto {
             get {
@@ -250,7 +250,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cobre mejorado.
+        ///   Busca una cadena traducida similar a Cast iron.
         /// </summary>
         internal static string cobreMejorado {
             get {
@@ -259,7 +259,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cobre puro.
+        ///   Busca una cadena traducida similar a Pure copper.
         /// </summary>
         internal static string cobrePuro {
             get {
@@ -268,7 +268,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cobre refinado.
+        ///   Busca una cadena traducida similar a Refined copper.
         /// </summary>
         internal static string cobreRefinado {
             get {
@@ -277,7 +277,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cuero curtido.
+        ///   Busca una cadena traducida similar a Tanned hide.
         /// </summary>
         internal static string cueroCurtido {
             get {
@@ -286,7 +286,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cuero hervido.
+        ///   Busca una cadena traducida similar a Boiled leather.
         /// </summary>
         internal static string cueroHervido {
             get {
@@ -295,7 +295,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cuero perfeccionado.
+        ///   Busca una cadena traducida similar a Finished leather.
         /// </summary>
         internal static string cueroPerfeccionado {
             get {
@@ -304,7 +304,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cuero Tratado.
+        ///   Busca una cadena traducida similar a Treated leather.
         /// </summary>
         internal static string cueroTratado {
             get {
@@ -313,7 +313,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Cuprita.
+        ///   Busca una cadena traducida similar a Cuprite.
         /// </summary>
         internal static string cuprita {
             get {
@@ -322,7 +322,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Digenita.
+        ///   Busca una cadena traducida similar a Digenite.
         /// </summary>
         internal static string digenita {
             get {
@@ -331,7 +331,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Estaño.
+        ///   Busca una cadena traducida similar a Tin.
         /// </summary>
         internal static string estaño {
             get {
@@ -340,7 +340,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Fosforo.
+        ///   Busca una cadena traducida similar a Phosphorous.
         /// </summary>
         internal static string fosforo {
             get {
@@ -349,7 +349,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Fresno.
+        ///   Busca una cadena traducida similar a Ash.
         /// </summary>
         internal static string fresno {
             get {
@@ -358,7 +358,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Goma laca.
+        ///   Busca una cadena traducida similar a Shellac.
         /// </summary>
         internal static string gomalaca {
             get {
@@ -367,7 +367,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Granate.
+        ///   Busca una cadena traducida similar a Garnet.
         /// </summary>
         internal static string granate {
             get {
@@ -376,7 +376,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Granito.
+        ///   Busca una cadena traducida similar a Granite.
         /// </summary>
         internal static string granito {
             get {
@@ -385,7 +385,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hematita.
+        ///   Busca una cadena traducida similar a Haematite.
         /// </summary>
         internal static string hematita {
             get {
@@ -394,7 +394,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hierro en bruto.
+        ///   Busca una cadena traducida similar a Raw iron.
         /// </summary>
         internal static string hierroBruto {
             get {
@@ -403,7 +403,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hierro forjado.
+        ///   Busca una cadena traducida similar a Wrought iron.
         /// </summary>
         internal static string hierroForjado {
             get {
@@ -412,7 +412,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hierro fundido.
+        ///   Busca una cadena traducida similar a Cast iron.
         /// </summary>
         internal static string hierroFundido {
             get {
@@ -421,7 +421,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Hierro puro.
+        ///   Busca una cadena traducida similar a Pure iron.
         /// </summary>
         internal static string hierroPuro {
             get {
@@ -430,7 +430,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Limonita.
+        ///   Busca una cadena traducida similar a Limonite.
         /// </summary>
         internal static string limonita {
             get {
@@ -439,7 +439,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Lino.
+        ///   Busca una cadena traducida similar a Flax.
         /// </summary>
         internal static string lino {
             get {
@@ -448,7 +448,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Madera alisada.
+        ///   Busca una cadena traducida similar a Planed wood.
         /// </summary>
         internal static string maderaAlisada {
             get {
@@ -466,7 +466,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Madera compuesta.
+        ///   Busca una cadena traducida similar a Composite wood.
         /// </summary>
         internal static string maderaCompuesta {
             get {
@@ -475,7 +475,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Madera seca.
+        ///   Busca una cadena traducida similar a Seasoned wood.
         /// </summary>
         internal static string maderaSeca {
             get {
@@ -484,7 +484,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Magnetita.
+        ///   Busca una cadena traducida similar a Magnetite.
         /// </summary>
         internal static string magnetita {
             get {
@@ -493,7 +493,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Manganeso negro.
+        ///   Busca una cadena traducida similar a Black manganese.
         /// </summary>
         internal static string manganesoNegro {
             get {
@@ -502,7 +502,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Mármol.
+        ///   Busca una cadena traducida similar a Marble.
         /// </summary>
         internal static string marmol {
             get {
@@ -511,7 +511,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Minio.
+        ///   Busca una cadena traducida similar a Minium.
         /// </summary>
         internal static string minio {
             get {
@@ -520,7 +520,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Nitrato de potasio.
+        ///   Busca una cadena traducida similar a Nitre.
         /// </summary>
         internal static string nitratopotasio {
             get {
@@ -529,7 +529,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piel de oveja.
+        ///   Busca una cadena traducida similar a Sheepskin.
         /// </summary>
         internal static string oveja {
             get {
@@ -538,7 +538,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Pelaje lobo de montaña.
+        ///   Busca una cadena traducida similar a Mountain wolf fur.
         /// </summary>
         internal static string pelajelobomontaña {
             get {
@@ -547,7 +547,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Pelajes.
+        ///   Busca una cadena traducida similar a Furs.
         /// </summary>
         internal static string pelajes {
             get {
@@ -556,7 +556,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piedra en bruto.
+        ///   Busca una cadena traducida similar a Rough stone.
         /// </summary>
         internal static string piedraBruto {
             get {
@@ -565,7 +565,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piedra cortada.
+        ///   Busca una cadena traducida similar a Cut stone.
         /// </summary>
         internal static string piedraCortada {
             get {
@@ -574,7 +574,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piedra detallada.
+        ///   Busca una cadena traducida similar a Detailed stone.
         /// </summary>
         internal static string piedraDetallada {
             get {
@@ -583,7 +583,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piedra lunar.
+        ///   Busca una cadena traducida similar a Moonstone.
         /// </summary>
         internal static string piedralunar {
             get {
@@ -592,7 +592,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piedra perfeccionada.
+        ///   Busca una cadena traducida similar a Finished stone.
         /// </summary>
         internal static string piedraPerfeccionada {
             get {
@@ -601,7 +601,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piel de bisonte.
+        ///   Busca una cadena traducida similar a Bison hide.
         /// </summary>
         internal static string pielbisonte {
             get {
@@ -610,7 +610,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Pino.
+        ///   Busca una cadena traducida similar a Pine.
         /// </summary>
         internal static string pino {
             get {
@@ -619,7 +619,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Roble.
+        ///   Busca una cadena traducida similar a Oak.
         /// </summary>
         internal static string roble {
             get {
@@ -628,7 +628,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Roca caliza.
+        ///   Busca una cadena traducida similar a Sandstone.
         /// </summary>
         internal static string rocaCaliza {
             get {
@@ -637,7 +637,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Seda.
+        ///   Busca una cadena traducida similar a Silk.
         /// </summary>
         internal static string seda {
             get {
@@ -646,7 +646,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Siderita.
+        ///   Busca una cadena traducida similar a Siderite ore.
         /// </summary>
         internal static string siderita {
             get {
@@ -664,7 +664,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Tela áspera.
+        ///   Busca una cadena traducida similar a Rough fabric.
         /// </summary>
         internal static string telaAspera {
             get {
@@ -673,7 +673,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Tela barata.
+        ///   Busca una cadena traducida similar a Cheap fabric.
         /// </summary>
         internal static string telaBarata {
             get {
@@ -682,7 +682,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Tela de calidad.
+        ///   Busca una cadena traducida similar a Quality fabric.
         /// </summary>
         internal static string telaCalidad {
             get {
@@ -691,7 +691,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Tela Excelente.
+        ///   Busca una cadena traducida similar a Fine fabric.
         /// </summary>
         internal static string telaExceletne {
             get {
@@ -700,7 +700,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Tendones.
+        ///   Busca una cadena traducida similar a Sinews.
         /// </summary>
         internal static string tendones {
             get {
@@ -709,7 +709,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Tungsteno.
+        ///   Busca una cadena traducida similar a Tungsten.
         /// </summary>
         internal static string tungsteno {
             get {
@@ -718,7 +718,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Turquesa.
+        ///   Busca una cadena traducida similar a Turquoise.
         /// </summary>
         internal static string turquesa {
             get {
@@ -727,7 +727,7 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Piel de vaca.
+        ///   Busca una cadena traducida similar a Cow hide.
         /// </summary>
         internal static string vaca {
             get {

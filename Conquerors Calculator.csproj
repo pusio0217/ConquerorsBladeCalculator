@@ -72,14 +72,20 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="clases\EquipamientoOriental.cs" />
+    <Compile Include="Properties\idiomaEN.Designer.cs">
+      <DependentUpon>idiomaEN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clases\Equipamiento.cs" />
-    <Compile Include="clases\Funciones.cs" />
+    <Compile Include="clases\EquipamientoOccidental.cs" />
+    <Compile Include="funciones\Funciones.cs" />
     <Compile Include="clases\Material.cs" />
     <Compile Include="clases\MaterialesRaros.cs" />
     <Compile Include="clases\MaterialPocoComun.cs" />
@@ -108,6 +114,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Properties\idiomaEN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>idiomaEN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\idiomaES.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>idiomaES.Designer.cs</LastGenOutput>
@@ -283,7 +293,6 @@
     <Resource Include="images\pelajeLoboMontaña.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="funciones\" />
     <Folder Include="idiomas\" />
   </ItemGroup>
   <ItemGroup>
@@ -298,6 +307,39 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\manganesoNegro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\cañamo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arcabuqueroHierro.PNG" />
+    <Resource Include="images\arqueroHierro.PNG" />
+    <Resource Include="images\arqueroImperial.PNG" />
+    <Resource Include="images\arqueroMontado.PNG" />
+    <Resource Include="images\arqueroPrefectura.PNG" />
+    <Resource Include="images\arqueroVanguardia.PNG" />
+    <Resource Include="images\espadachinHierro.PNG" />
+    <Resource Include="images\exploradorHierro.PNG" />
+    <Resource Include="images\guardaPrefectura.PNG" />
+    <Resource Include="images\guardiaImperial.PNG" />
+    <Resource Include="images\jabalineroMiliciano.PNG" />
+    <Resource Include="images\lanceroHierro.PNG" />
+    <Resource Include="images\lanceroImperial.PNG" />
+    <Resource Include="images\piqueroMiliciano.PNG" />
+    <Resource Include="images\piqueroPrefectura.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\jabalineroImperial.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\guardaPalacio.PNG" />
+    <Resource Include="images\lanceroHachaDaga.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\piqueroImperial.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\caballeroPrefectura.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

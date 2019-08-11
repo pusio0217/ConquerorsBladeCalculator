@@ -1,6 +1,50 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <!-- Occidente-->
+    <system:String x:Key="soloExoticos">Only exotic</system:String>
+    <system:String x:Key="lanceroSeñorio">Demesne spearman</system:String>
+    <system:String x:Key="jabalineroSeñorio">Demesne javelineer</system:String>
+    <system:String x:Key="arqueroSeñorio">Demesne archer</system:String>
+    <system:String x:Key="ballesteroSeñorio">Demesne crossbowman</system:String>
+    <system:String x:Key="coustilleux">Coutilier</system:String>
 
-    <system:String x:Key="lanceroSeñorio">lancer english</system:String>
+    <system:String x:Key="escudero">Squire</system:String>
+    <system:String x:Key="alabardero">Halberdier</system:String>
+    <system:String x:Key="arqueroFuego">Fire archer</system:String>
+    <system:String x:Key="ballesteroMercenario">Mercenary crossbowman</system:String>
+    <system:String x:Key="arcabuqueroMercenario">Mercenary arquebusier</system:String>
+
+    <system:String x:Key="hombreArmas">Man-at-arms</system:String>
+    <system:String x:Key="sargentoLancero">Spear sergeant</system:String>
+    <system:String x:Key="sargentoJabalinero">Javelin sergeant</system:String>
+    <system:String x:Key="sargentoAlabardero">Halberdier sergeant</system:String>
+    <system:String x:Key="arqueroMercenario">Mercenary longbowman</system:String>
+    <system:String x:Key="fusileroKriegsrat">Kriegsrat fusilier</system:String>
+    <system:String x:Key="lanceroYeoman">Yeoman lancer</system:String>
+
+
+    <!-- Oriente-->
+    <system:String x:Key="espadachinHierro">Ironcap swordsman</system:String>
+    <system:String x:Key="jabalineroMiliciano">Javelin militiaman</system:String>
+    <system:String x:Key="piqueroMiliciano">Pike militiaman</system:String>
+    <system:String x:Key="arqueroYelmoHierro">Ironcap archer</system:String>
+    <system:String x:Key="arcabuqueroYelmoHierro">Ironcap arquebusier</system:String>
+    <system:String x:Key="exploradorYelmoHierro">Ironcap scout</system:String>
+    <system:String x:Key="arqueroMontadoYelmoHierro">Ironcap bowrider</system:String>
+
+    <system:String x:Key="guardaPrefectura">Prefecture guardsman</system:String>
+    <system:String x:Key="lanceroYelmoHierro">Ironcap spearman</system:String>
+    <system:String x:Key="piqueroPrefectura">Prefecture pikeman</system:String>
+    <system:String x:Key="arqueroVanguardia">Vanguard archer</system:String>
+    <system:String x:Key="arqueroPerfectura">Prefecture archer</system:String>
+
+    <system:String x:Key="guardaPalacio">Palace guardsman</system:String>
+    <system:String x:Key="lanceroGuardaImperial">Imperial spear guard</system:String>
+    <system:String x:Key="jabalineroImperial">Imperial javelineer</system:String>
+    <system:String x:Key="piqueroImperial">Imperial pike guard</system:String>
+    <system:String x:Key="arqueroImperial">Imperial archer</system:String>
+    <system:String x:Key="caballeroPrefectura">Prefecture cavalryman</system:String>
+    <system:String x:Key="lanceroHachaDaga">Dagger-axe lancer</system:String>
+
 </ResourceDictionary>
