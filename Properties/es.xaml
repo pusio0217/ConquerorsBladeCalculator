@@ -31,7 +31,7 @@
     <system:String x:Key="arqueroYelmoHierro">Arquero yelmo de hierro</system:String>
     <system:String x:Key="arcabuqueroYelmoHierro">Arcabuquero yelmo de hierro</system:String>
     <system:String x:Key="exploradorYelmoHierro">Explorador yelmo de hierro</system:String>
-    <system:String x:Key="arqueroMontadoYelmoHierro">Arquero montado yelmo de hierro</system:String>
+    <system:String x:Key="arqueroMontadoYelmoHierro">Arquero mont. yelmo hierro</system:String>
 
     <system:String x:Key="guardaPrefectura">Guarda de prefectura</system:String>
     <system:String x:Key="lanceroYelmoHierro">Lancero yelmo de hierro</system:String>

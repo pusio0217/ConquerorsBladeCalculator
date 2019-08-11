@@ -8,7 +8,7 @@
         mc:Ignorable="d" 
         Title="Conqueror's calculator" Height="700" Width="1000" ResizeMode="NoResize">
     <Window.Resources>
-       
+
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
 
@@ -29,16 +29,16 @@
             <Style TargetType="{x:Type Button}">
                 <!-- Default Values -->
                 <Setter Property="Opacity" Value="0.7"/>
-                
+
                 <Style.Triggers>
                     <Trigger Property="IsMouseOver" Value="True">
                         <Setter Property="Button.Opacity" Value="1" />
-                   
+
                     </Trigger>
                 </Style.Triggers>
             </Style>
         </ResourceDictionary>
-       
+
     </Window.Resources>
     <Grid>
         <Button x:Name="imgSpain"  Margin="134,10,830,631"  Panel.ZIndex="1" Click="ImgSpain_Click">
@@ -86,7 +86,7 @@
 
 
         </Grid>
-        <TabControl Margin="0,23,681,24" Background="Transparent">
+        <TabControl Margin="0,23,656,24" Background="Transparent">
             <TabItem Header="Europa" >
                 <ScrollViewer>
                     <StackPanel   Background="Transparent"  HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="289">
@@ -187,104 +187,104 @@
                         <Grid>
                             <Image x:Name="imgEspadachinHierro" HorizontalAlignment="Left" Width="50" Height="50" Source="images/espadachinHierro.PNG" Cursor="Help" />
                             <Label  Foreground="LightGreen"  Content="{DynamicResource espadachinHierro}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtEspadachinHierro" TextChanged="TxtEspadachinHierro_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtEspadachinHierro" TextChanged="TxtEspadachinHierro_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"/>
                         </Grid>
 
                         <Grid>
                             <Image x:Name="imgJabalineroMiliciano" HorizontalAlignment="Left" Width="50" Height="50" Source="images/jabalineroMiliciano.PNG" Cursor="Help" />
                             <Label  Foreground="LightGreen"  Content="{DynamicResource jabalineroMiliciano}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtJabalineroMiliciano"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtJabalineroMiliciano_TextChanged"/>
+                            <TextBox x:Name="txtJabalineroMiliciano"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtJabalineroMiliciano_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgPiqueroMiliciano" HorizontalAlignment="Left" Width="50" Height="50" Source="images/piqueroMiliciano.PNG" Cursor="Help" />
                             <Label  Foreground="LightGreen"  Content="{DynamicResource piqueroMiliciano}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtPiqueroMiliciano"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtPiqueroMiliciano_TextChanged"/>
+                            <TextBox x:Name="txtPiqueroMiliciano"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtPiqueroMiliciano_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgArqueroYelmoHierro" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroHierro.PNG" Cursor="Help" />
                             <Label  Foreground="LightGreen"  Content="{DynamicResource arqueroYelmoHierro}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtArqueroYelmoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroYelmoHierro_TextChanged"/>
+                            <TextBox x:Name="txtArqueroYelmoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroYelmoHierro_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgArcabuqueroYelmoHierro" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arcabuqueroHierro.PNG" Cursor="Help" />
                             <Label  Foreground="LightGreen"  Content="{DynamicResource arcabuqueroYelmoHierro}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtArcabuqueroYelmoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArcabuqueroYelmoHierro_TextChanged"/>
+                            <TextBox x:Name="txtArcabuqueroYelmoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArcabuqueroYelmoHierro_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgExploradorYelmoHierro" HorizontalAlignment="Left" Width="50" Height="50" Source="images/exploradorHierro.PNG" Cursor="Help" />
                             <Label  Foreground="LightGreen"  Content="{DynamicResource exploradorYelmoHierro}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtExploradorYelmoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtExploradorYelmoHierro_TextChanged"/>
+                            <TextBox x:Name="txtExploradorYelmoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtExploradorYelmoHierro_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgArqueroMontadoHierro" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroMontado.PNG" Cursor="Help" />
                             <Label  Foreground="LightGreen"  Content="{DynamicResource arqueroMontadoYelmoHierro}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtArqueroMontadoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroMontadoHierro_TextChanged"/>
+                            <TextBox x:Name="txtArqueroMontadoHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroMontadoHierro_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgGuardaPrefectura" HorizontalAlignment="Left" Width="50" Height="50" Source="images/guardaPrefectura.PNG" Cursor="Help" />
                             <Label  Foreground="DeepSkyBlue"  Content="{DynamicResource guardaPrefectura}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtGuardaPrefectura"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtGuardaPrefectura_TextChanged"/>
+                            <TextBox x:Name="txtGuardaPrefectura"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtGuardaPrefectura_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgLanceroHierro" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroHierro.PNG" Cursor="Help" />
                             <Label  Foreground="DeepSkyBlue"  Content="{DynamicResource lanceroYelmoHierro}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtLanceroHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtLanceroHierro_TextChanged"/>
+                            <TextBox x:Name="txtLanceroHierro"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtLanceroHierro_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgPiqueroPrefectura" HorizontalAlignment="Left" Width="50" Height="50" Source="images/piqueroPrefectura.PNG" Cursor="Help" />
                             <Label  Foreground="DeepSkyBlue"  Content="{DynamicResource piqueroPrefectura}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtPiqueroPrefectura"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtPiqueroPrefectura_TextChanged"/>
+                            <TextBox x:Name="txtPiqueroPrefectura"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtPiqueroPrefectura_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgArqueroVanguardia" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroVanguardia.PNG" Cursor="Help" />
                             <Label  Foreground="DeepSkyBlue"  Content="{DynamicResource arqueroVanguardia}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtArqueroVanguardia"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroVanguardia_TextChanged"/>
+                            <TextBox x:Name="txtArqueroVanguardia"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroVanguardia_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgArqueroPrefectura" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroPrefectura.PNG" Cursor="Help" />
                             <Label  Foreground="DeepSkyBlue"  Content="{DynamicResource arqueroPerfectura}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtArqueroPrefectura"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroPrefectura_TextChanged"/>
+                            <TextBox x:Name="txtArqueroPrefectura"   HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1" TextChanged="TxtArqueroPrefectura_TextChanged"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgGuardaPalacio" HorizontalAlignment="Left" Width="50" Height="50" Source="images/guardaPalacio.PNG" Cursor="Help" />
                             <Label  Foreground="MediumOrchid"  Content="{DynamicResource guardaPalacio}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtGuardaPalacio"  TextChanged="TxtGuardaPalacio_TextChanged" HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtGuardaPalacio"  TextChanged="TxtGuardaPalacio_TextChanged" HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgLanceroGuardiaImperial" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroImperial.PNG" Cursor="Help" />
                             <Label  Foreground="MediumOrchid"  Content="{DynamicResource lanceroGuardaImperial}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtLanceroGuardiaImperial"  TextChanged="TxtLanceroGuardiaImperial_TextChanged" HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtLanceroGuardiaImperial"  TextChanged="TxtLanceroGuardiaImperial_TextChanged" HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgJabalineroImperial" HorizontalAlignment="Left" Width="50" Height="50" Source="images/jabalineroImperial.PNG" Cursor="Help" />
                             <Label  Foreground="MediumOrchid"  Content="{DynamicResource jabalineroImperial}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtJabalineroImperial" TextChanged="TxtJabalineroImperial_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtJabalineroImperial" TextChanged="TxtJabalineroImperial_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgPiqueroImperial" HorizontalAlignment="Left" Width="50" Height="50" Source="images/piqueroImperial.PNG" Cursor="Help" />
                             <Label  Foreground="MediumOrchid"  Content="{DynamicResource piqueroImperial}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtPiqueroImperial" TextChanged="TxtPiqueroImperial_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtPiqueroImperial" TextChanged="TxtPiqueroImperial_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgArqueroImperial" HorizontalAlignment="Left" Width="50" Height="50" Source="images/arqueroImperial.PNG" Cursor="Help" />
                             <Label  Foreground="MediumOrchid"  Content="{DynamicResource arqueroImperial}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtArqueroImperial" TextChanged="TxtArqueroImperial_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtArqueroImperial" TextChanged="TxtArqueroImperial_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgCaballeroPrefectura" HorizontalAlignment="Left" Width="50" Height="50" Source="images/caballeroPrefectura.PNG" Cursor="Help" />
                             <Label  Foreground="MediumOrchid"  Content="{DynamicResource caballeroPrefectura}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtCaballeroPrefectura" TextChanged="TxtCaballeroPrefectura_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtCaballeroPrefectura" TextChanged="TxtCaballeroPrefectura_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
                         </Grid>
                         <Grid>
                             <Image x:Name="imgLanceroHachaDaga" HorizontalAlignment="Left" Width="50" Height="50" Source="images/lanceroHachaDaga.PNG" Cursor="Help" />
                             <Label  Foreground="MediumOrchid"  Content="{DynamicResource lanceroHachaDaga}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Grid.ColumnSpan="2" />
-                            <TextBox x:Name="txtLanceroHachaDaga" TextChanged="TxtLanceroHachaDaga_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="211,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
+                            <TextBox x:Name="txtLanceroHachaDaga" TextChanged="TxtLanceroHachaDaga_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="49"   Grid.Column="1"/>
                         </Grid>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
         </TabControl>
-        <DataGrid x:Name="DGmateriales"  RowBackground="Transparent"  Background="Transparent" GridLinesVisibility="Horizontal"   AutoGenerateColumns="False" HeadersVisibility="None" Margin="327,44,366,24" SelectionChanged="DGmateriales_SelectionChanged"   >
+        <DataGrid x:Name="DGmateriales"  RowBackground="Transparent"  Background="Transparent" GridLinesVisibility="Horizontal"   AutoGenerateColumns="False" HeadersVisibility="None" Margin="343,44,350,24" SelectionChanged="DGmateriales_SelectionChanged"   >
 
 
 
