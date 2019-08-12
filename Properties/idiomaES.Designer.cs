@@ -70,6 +70,15 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Alerce.
+        /// </summary>
+        internal static string alerce {
+            get {
+                return ResourceManager.GetString("alerce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Algodon alta calidad.
         /// </summary>
         internal static string algodonAltaCalidad {

@@ -120,6 +120,9 @@
   <data name="aceitelinaza" xml:space="preserve">
     <value>Linseed oil</value>
   </data>
+  <data name="alerce" xml:space="preserve">
+    <value>Larch</value>
+  </data>
   <data name="algodonAltaCalidad" xml:space="preserve">
     <value>Long cotton</value>
   </data>

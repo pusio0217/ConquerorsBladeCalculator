@@ -290,6 +290,11 @@ namespace Conquerors_Calculator.modelos
             return new Recurso(idioma.seda, cantidad, Rareza.Epico,Origen.Algodon,Tipo.Exotico,"");
         }
 
+        public static Recurso Alerce(int cantidad)
+        {
+            return new Recurso(idioma.alerce, cantidad, Rareza.Raro, Origen.Madera, Tipo.Exotico, "");
+        }
+
         public object Clone()
         {
        

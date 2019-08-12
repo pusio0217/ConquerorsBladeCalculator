@@ -120,6 +120,9 @@
   <data name="aceitelinaza" xml:space="preserve">
     <value>Aceite de linaza</value>
   </data>
+  <data name="alerce" xml:space="preserve">
+    <value>Alerce</value>
+  </data>
   <data name="algodonAltaCalidad" xml:space="preserve">
     <value>Algodon alta calidad</value>
   </data>

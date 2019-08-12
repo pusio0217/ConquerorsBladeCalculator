@@ -27,10 +27,10 @@ namespace Conquerors_Calculator.modelos
         public static Material MaderaBarnizada(int cantidad)
         {
             return new Material(idioma.maderaBarnizada, 20, new List<Recurso> {
-                Recurso.Roble(-5000),
-                Recurso.Cedro(-5000),
-                Recurso.Carbon(-5000),
-                Recurso.Tejo(-5000)
+                Recurso.Roble(15),
+                Recurso.Cedro(10),
+                Recurso.AceiteLinaza(1),
+                Recurso.Alerce(-5000)
 
 
             }, cantidad, Rareza.Epico, "maderaCompuesta.PNG");
@@ -149,6 +149,8 @@ namespace Conquerors_Calculator.modelos
 
             }, cantidad, Rareza.Epico, "");
         }
+       
+
 
     }
 }

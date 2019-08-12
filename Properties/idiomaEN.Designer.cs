@@ -70,6 +70,15 @@ namespace Conqueros_Calculator.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Larch.
+        /// </summary>
+        internal static string alerce {
+            get {
+                return ResourceManager.GetString("alerce", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Long cotton.
         /// </summary>
         internal static string algodonAltaCalidad {
