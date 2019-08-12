@@ -30,7 +30,7 @@ namespace Conquerors_Calculator.modelos
                 Recurso.Roble(15),
                 Recurso.Cedro(10),
                 Recurso.AceiteLinaza(1),
-                Recurso.Alerce(-5000)
+                Recurso.Alerce(1)
 
 
             }, cantidad, Rareza.Epico, "maderaCompuesta.PNG");
