@@ -17,7 +17,7 @@ namespace Conquerors_Calculator.modelos
             return new Material(idioma.maderaCompuesta, 20, new List<Recurso> {
                 Recurso.Roble(15),
                 Recurso.Cedro(10),
-                Recurso.Carbon(1),
+                Recurso.CarbonPiedra(1),
                 Recurso.Tejo(1),
          
 
@@ -54,7 +54,7 @@ namespace Conquerors_Calculator.modelos
             return new Material(idioma.hierroPuro, 20, new List<Recurso> {
                 Recurso.Hematita(10),
                 Recurso.Limonita(15),
-                Recurso.Carbon(1),
+                Recurso.CarbonPiedra(1),
                Recurso.BauxitaMontaña(1)
 
             }, cantidad, Rareza.Epico, "hierroPuro.PNG");
@@ -100,7 +100,7 @@ namespace Conquerors_Calculator.modelos
             return new Material(idioma.cobreRefinado, 20, new List<Recurso> {
                 Recurso.Digenita(15),
                  Recurso.Cuprita(10),
-                Recurso.Carbon(1),
+                Recurso.CarbonMadera(1),
                 Recurso.Minio(1),
 
             }, cantidad, Rareza.Epico, "cobrePuro.PNG");

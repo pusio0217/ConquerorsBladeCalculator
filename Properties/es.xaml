@@ -19,12 +19,14 @@
     <system:String x:Key="sargentoLancero">Sargento lancero</system:String>
     <system:String x:Key="sargentoJabalinero">Sargento jabalinero</system:String>
     <system:String x:Key="sargentoAlabardero">Sargento alabardero</system:String>
-    <system:String x:Key="arqueroMercenario">Arquero mercenario</system:String>
+    <system:String x:Key="arqueroVasallo">Arquero vasallo</system:String>
     <system:String x:Key="fusileroKriegsrat">Fusilero Kriegsrat</system:String>
     <system:String x:Key="lanceroYeoman">Lancero Yeoman</system:String>
-
-    
-    <!-- Oriente-->
+  <system:String x:Key="monastico">Caballero monástico</system:String>
+  <system:String x:Key="arcabuceroTercio">Arcabucero de tercio</system:String>
+  <system:String x:Key="husarAlado">Husar alado</system:String>
+  <system:String x:Key="catafracto">Soldado catafracto</system:String>
+  <!-- Oriente-->
     <system:String x:Key="espadachinHierro">Espadachin yelmo de hierro</system:String>
     <system:String x:Key="jabalineroMiliciano">Jabalinero miliciano</system:String>
     <system:String x:Key="piqueroMiliciano">Piquero miliciano</system:String>
@@ -47,4 +49,6 @@
     <system:String x:Key="caballeroPrefectura">Caballero de prefectura</system:String>
     <system:String x:Key="lanceroHachaDaga">Lancero hacha-daga</system:String>
 
+  <system:String x:Key="lanceroFuego">Lancero de fuego</system:String>
+  <system:String x:Key="segadorHierro">Segador de hierro</system:String>
 </ResourceDictionary>

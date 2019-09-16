@@ -8,7 +8,7 @@ namespace Conquerors_Calculator.modelos
 {
     public enum Rareza
     {
-        Comun, PocoComun, Raro, Epico
+        Comun, PocoComun, Raro, Epico,Legendario
     }
     public  enum Zonas
     {

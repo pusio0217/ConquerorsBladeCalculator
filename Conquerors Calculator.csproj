@@ -73,8 +73,12 @@
   <PropertyGroup>
     <TargetZone>LocalIntranet</TargetZone>
   </PropertyGroup>
+  <PropertyGroup />
   <PropertyGroup>
-    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <ApplicationIcon>model_pAz_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -301,7 +305,7 @@
     <Resource Include="images\sargentoLancero.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\carbon.PNG" />
+    <Resource Include="images\carbonPiedra.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\cueroPerfeccionado.PNG" />
@@ -317,7 +321,7 @@
     <Resource Include="images\tejo.PNG" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="images\arqueroMercenario.PNG" />
+    <Resource Include="images\arqueroVasallo.PNG" />
     <Resource Include="images\hombreArmas.PNG" />
     <Resource Include="images\kriegsrat.PNG" />
     <Resource Include="images\lanceroYeoman.PNG" />
@@ -336,9 +340,7 @@
     <Resource Include="images\nitratoPotasio.PNG" />
     <Resource Include="images\pelajeLoboMontaña.PNG" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="idiomas\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="images\english.png" />
     <Resource Include="images\spain.png" />
@@ -396,6 +398,22 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\monastico.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="model_pAz_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\carbonMadera.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\arcabuceroTercio.PNG" />
+    <Resource Include="images\catafracto.PNG" />
+    <Resource Include="images\husarAlado.PNG" />
+    <Resource Include="images\lanceroFuego.PNG" />
+    <Resource Include="images\segadorHierro.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

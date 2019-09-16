@@ -78,12 +78,12 @@ namespace Conquerors_Calculator.modelos
         }
         public static Recurso AlgodonNube(int cantidad)
         {
-            return new Recurso(idioma.algodonNube, cantidad, Rareza.PocoComun,Origen.Algodon,Tipo.Exotico, "algodonNube.PNG");
+            return new Recurso(idioma.algodonNube, cantidad, Rareza.Raro,Origen.Algodon,Tipo.Exotico, "algodonNube.PNG");
         }
 
         public static Recurso Tungsteno(int cantidad)
         {
-            return new Recurso(idioma.tungsteno, cantidad, Rareza.PocoComun,Origen.Hierro,Tipo.Exotico, "tungsteno.PNG");
+            return new Recurso(idioma.tungsteno, cantidad, Rareza.Raro,Origen.Hierro,Tipo.Exotico, "tungsteno.PNG");
         }
 
         public static Recurso Siderita(int cantidad)
@@ -246,11 +246,15 @@ namespace Conquerors_Calculator.modelos
         {
             return new Recurso(idioma.nitratopotasio, cantidad, Rareza.PocoComun,Origen.Piedra,Tipo.Exotico,"nitratoPotasio.PNG");
         }
-        public static Recurso Carbon(int cantidad)
+        public static Recurso CarbonPiedra(int cantidad)
         {
-            return new Recurso(idioma.carbon, cantidad, Rareza.PocoComun,Origen.Piedra,Tipo.Exotico,"carbon.PNG");
+            return new Recurso(idioma.carbon, cantidad, Rareza.PocoComun,Origen.Piedra,Tipo.Exotico,"carbonPiedra.PNG");
         }
-        public static Recurso PiedraLunar(int cantidad)
+    public static Recurso CarbonMadera(int cantidad)
+    {
+      return new Recurso(idioma.carbon, cantidad, Rareza.PocoComun, Origen.Madera, Tipo.Exotico, "carbonMadera.PNG");
+    }
+    public static Recurso PiedraLunar(int cantidad)
         {
             return new Recurso(idioma.piedralunar, cantidad, Rareza.Epico,Origen.Piedra,Tipo.Exotico,"");
         }
