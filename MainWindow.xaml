@@ -302,12 +302,12 @@
             </Grid>
             <Grid>
               <Image x:Name="imgLanceroFuego" HorizontalAlignment="Left" Width="50" Height="50"  Cursor="Help" Source="images/lanceroFuego.PNG" />
-              <Label  Foreground="Orange"  Content="{DynamicResource catafracto}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+              <Label  Foreground="Orange"  Content="{DynamicResource lanceroFuego}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
               <TextBox x:Name="txtLanceroFuego" TextChanged="TxtLanceroFuego_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0"   TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" />
             </Grid>
             <Grid>
               <Image x:Name="imgSegadorHierro" HorizontalAlignment="Left" Width="50" Height="50"  Cursor="Help" Source="images/segadorHierro.PNG" />
-              <Label  Foreground="Orange"  Content="{DynamicResource catafracto}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
+              <Label  Foreground="Orange"  Content="{DynamicResource segadorHierro}" HorizontalAlignment="Left" Margin="55,10,0,0" VerticalAlignment="Top" FontWeight="Bold" />
               <TextBox x:Name="txtSegadorHierro" TextChanged="TxtSegadorHierro_TextChanged"  HorizontalAlignment="Left" MaxLength="3" FontSize="20" Margin="230,10,0,0"   TextWrapping="Wrap"  VerticalAlignment="Top" Width="49" />
             </Grid>
           </StackPanel>
